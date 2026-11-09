@@ -1,0 +1,140 @@
+{
+  "uppdaterad": "2026-11-09",
+  "kommentar": "Trender från Sellpys egna sökrapporter. Varje trend har citat, källa och ett datum då den slutar visas. 'filter' matchas mot Sellpys egna filtervärden när appen eller bevakningen körs. 'bevakas' styr om trenden ingår i den dagliga notisen.",
+  "kallor": {
+    "sellpy-2026-10": {
+      "titel": "Nära 50 miljoner sökningar avslöjar: Det söker svenskarna efter på Sellpy just nu",
+      "utgivare": "Sellpy, pressmeddelande",
+      "datum": "2026-10-01",
+      "dataperiod": "Sökningar 1 jan–20 aug 2026 jämfört med samma period 2025, plus en separat genomgång av augusti",
+      "url": "https://via.tt.se/pressmeddelande/4573358/nara-50-miljoner-sokningar-avslojar-det-soker-svenskarna-efter-pa-sellpy-just-nu?lang=sv"
+    }
+  },
+  "trender": [
+    {
+      "id": "piketroja",
+      "namn": "Pikétröjor",
+      "avdelning": "Herr",
+      "citat": "På herrsidan syns en markant ökning för både pikétröjor och den klassiska Henley-tröjan.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": true,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.type", "matchar": "^pikétröja$" }],
+      "reservSokord": "pikétröja"
+    },
+    {
+      "id": "henley",
+      "namn": "Henley-tröjor",
+      "avdelning": "Herr",
+      "citat": "På herrsidan syns en markant ökning för både pikétröjor och den klassiska Henley-tröjan.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": true,
+      "sokord": "henley",
+      "filter": []
+    },
+    {
+      "id": "rutigt",
+      "namn": "Rutigt",
+      "avdelning": "Ej angivet",
+      "citat": "Skinn, rutigt, ponchos och klassiskt herrmode visar ett tydligt momentum i de senaste sökningarna.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": true,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.pattern", "matchar": "rut" }],
+      "reservSokord": "rutig"
+    },
+    {
+      "id": "skinn",
+      "namn": "Skinn",
+      "avdelning": "Ej angivet",
+      "citat": "Skinn, rutigt, ponchos och klassiskt herrmode visar ett tydligt momentum i de senaste sökningarna.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": true,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.material", "matchar": "^(äkta )?(läder|skinn)$" }],
+      "reservSokord": "skinn"
+    },
+    {
+      "id": "lila",
+      "namn": "Lila",
+      "avdelning": "Ej angivet",
+      "citat": "… medan färgen lila har klättrat kraftigt under augusti.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": true,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.color", "matchar": "^lila$" }],
+      "reservSokord": "lila"
+    },
+    {
+      "id": "korta-kavajer",
+      "namn": "Korta kavajer",
+      "avdelning": "Ej angivet",
+      "citat": "Även korta kavajer visar en stark tillväxt.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": false,
+      "sokord": "",
+      "filter": [
+        { "falt": "metadata.type", "matchar": "^kavaj$" },
+        { "falt": "metadata.garmentLength", "matchar": "kort" }
+      ],
+      "reservSokord": "kort kavaj"
+    },
+    {
+      "id": "poncho",
+      "namn": "Ponchos",
+      "avdelning": "Ej angivet",
+      "citat": "Skinn, rutigt, ponchos och klassiskt herrmode visar ett tydligt momentum i de senaste sökningarna.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": false,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.type", "matchar": "poncho" }],
+      "reservSokord": "poncho"
+    },
+    {
+      "id": "trekvartsarm",
+      "namn": "Trekvartsärmade tröjor",
+      "avdelning": "Ej angivet",
+      "citat": "Sökningarna på trekvartsärmade tröjor har rusat med 323 procent, samtidigt som capribyxor ökar med 182 procent.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": false,
+      "sokord": "",
+      "filter": [{ "falt": "metadata.sleeveLength", "matchar": "trekvart|3/4" }],
+      "reservSokord": "trekvartsärm"
+    },
+    {
+      "id": "capribyxor",
+      "namn": "Capribyxor",
+      "avdelning": "Ej angivet",
+      "citat": "Sökningarna på trekvartsärmade tröjor har rusat med 323 procent, samtidigt som capribyxor ökar med 182 procent.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": false,
+      "sokord": "capri",
+      "filter": []
+    },
+    {
+      "id": "skinnbyxor-dam",
+      "namn": "Skinnbyxor (dam)",
+      "avdelning": "Dam",
+      "citat": "Sökningar på skinnbyxor för dam har ökat med över 1 000 procent jämfört med samma period föregående år.",
+      "kalla": "sellpy-2026-10",
+      "giltigTill": "2027-02-28",
+      "bevakas": false,
+      "sokord": "skinnbyxor",
+      "filter": []
+    }
+  ],
+  "utelamnat": [
+    "Klassiskt herrmode: nämns i rapporten men Sellpy säger inte vad som ingår, så det går inte att söka på utan att gissa.",
+    "90-talets minimalistiska silhuetter: för vagt för att söka på.",
+    "Sverige fotbollströja: ökningen gällde fotbolls-VM i somras och är inte aktuell nu."
+  ]
+}
