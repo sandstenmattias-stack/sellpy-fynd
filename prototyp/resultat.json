@@ -1,0 +1,1172 @@
+{
+  "kordes": "2026-11-09T22:22:40.019Z",
+  "tester": [
+    {
+      "namn": "1. Hämta söknyckel och index från Sellpys sajt",
+      "ok": true,
+      "appId": "M6WNFR0LVI",
+      "index": {
+        "marketItemIndexSaleStartDescending": "prod_marketItem_se_saleStartedAt_desc",
+        "marketItemIndexRelevance": "prod_marketItem_se_relevance",
+        "marketItemIndexPriceAscending": "prod_marketItem_se_price_asc",
+        "marketItemIndexPriceDescending": "prod_marketItem_se_price_desc_virtual"
+      }
+    },
+    {
+      "namn": "1b. Reservnyckeln från öppen kod fungerar",
+      "ok": true,
+      "traffar": 183628
+    },
+    {
+      "namn": "2. Sökning på \"pikétröja\"",
+      "ok": true,
+      "traffar": 243349,
+      "sidor": 48,
+      "perSida": 50,
+      "faltIForstaTraffen": [
+        "createdAt",
+        "updatedAt",
+        "user",
+        "bag",
+        "metadata",
+        "productIdentifiers",
+        "images",
+        "sizes",
+        "p2p",
+        "isReserved",
+        "segment",
+        "itemIO",
+        "categories",
+        "storageSite",
+        "isOnShelf",
+        "searchableExternalCategory",
+        "saleType",
+        "personalization_sizeCategory",
+        "titleOutputOrder",
+        "bodyOutputOrder",
+        "itemAbTestFraction",
+        "brandClassification",
+        "keywords",
+        "style",
+        "brandGroups",
+        "concept",
+        "weight",
+        "itemPackaging",
+        "favouriteCount",
+        "relevanceRankingNormalDist15SimilarItem",
+        "relevanceRankingNormalDist15",
+        "proximityBucketV1",
+        "proximityBucketV2",
+        "favoriteCountBucket",
+        "salesChannel",
+        "pricing",
+        "isForSale",
+        "saleStartedAt",
+        "lastChance",
+        "price_SE",
+        "priceDrop_SE",
+        "firstOfferedAt_SE",
+        "objectID",
+        "_highlightResult"
+      ],
+      "metadataFalt": [
+        "demography",
+        "color",
+        "pattern",
+        "size",
+        "type",
+        "brand",
+        "defects",
+        "condition",
+        "sleeveLength",
+        "details"
+      ],
+      "ifyllda": {
+        "metadata.brand": "47/50",
+        "metadata.type": "50/50",
+        "metadata.size": "50/50",
+        "sizes": "50/50",
+        "metadata.condition": "50/50",
+        "metadata.demography": "50/50",
+        "pricing.amount": "50/50",
+        "price_SE.amount": "50/50",
+        "images": "50/50",
+        "isForSale": "50/50",
+        "favouriteCount": "50/50",
+        "favoriteCount": "0/50",
+        "saleStartedAt": "50/50"
+      }
+    },
+    {
+      "namn": "3. Filtervärden från Sellpys data",
+      "ok": true,
+      "filterbaraFalt": [
+        "sizes",
+        "style",
+        "segment",
+        "saleType",
+        "materials",
+        "brandGroups",
+        "storageSite",
+        "salesChannel",
+        "metadata.size",
+        "metadata.type",
+        "metadata.brand",
+        "metadata.color",
+        "categories.lvl0",
+        "categories.lvl1",
+        "categories.lvl2",
+        "categories.lvl3",
+        "itemPriceBucket",
+        "metadata.fabric",
+        "metadata.season",
+        "price_SE.amount",
+        "metadata.pattern",
+        "metadata.language",
+        "metadata.material",
+        "metadata.neckline",
+        "proximityBucketV1",
+        "metadata.condition",
+        "metadata.waistRise",
+        "metadata.demography",
+        "metadata.pantsLength",
+        "metadata.defects.type",
+        "metadata.sleeveLength",
+        "metadata.garmentLength",
+        "metadata.restrictedModel",
+        "searchableExternalCategory",
+        "metadata.measurement.waistInCm",
+        "metadata.measurement.widthInCm",
+        "metadata.measurement.heightInCm",
+        "metadata.measurement.lengthInCm",
+        "metadata.measurement.heelHeightInCm",
+        "metadata.measurement.innerLegLengthInCm"
+      ],
+      "avdelning": [
+        [
+          "Kvinna",
+          8835013
+        ],
+        [
+          "Man",
+          1359927
+        ],
+        [
+          "Flicka",
+          850254
+        ],
+        [
+          "Unisex (Barn)",
+          628034
+        ],
+        [
+          "Pojke",
+          377744
+        ],
+        [
+          "Unisex (Vuxen)",
+          237190
+        ]
+      ],
+      "skick": [
+        [
+          "Mycket bra",
+          6578801
+        ],
+        [
+          "Bra",
+          4166651
+        ],
+        [
+          "Acceptabelt",
+          1542538
+        ],
+        [
+          "Nytt",
+          580059
+        ],
+        [
+          "Dåligt",
+          9694
+        ],
+        [
+          "Normalt",
+          4802
+        ]
+      ],
+      "kategori": [
+        [
+          "Kvinna",
+          9113345
+        ],
+        [
+          "Barn",
+          1844060
+        ],
+        [
+          "Man",
+          1641493
+        ],
+        [
+          "Prylar",
+          518499
+        ],
+        [
+          "Skönhet",
+          39522
+        ],
+        [
+          "Accessoarer",
+          96
+        ],
+        [
+          "Inredning",
+          20
+        ],
+        [
+          "Hushåll",
+          14
+        ],
+        [
+          "Media & Spel",
+          12
+        ],
+        [
+          "Fritid",
+          11
+        ],
+        [
+          "Hemelektronik",
+          5
+        ]
+      ],
+      "plaggtyp": [
+        [
+          "Klänning",
+          986563
+        ],
+        [
+          "Jeans",
+          663305
+        ],
+        [
+          "T-shirt",
+          646874
+        ],
+        [
+          "Topp",
+          445069
+        ],
+        [
+          "Tröja",
+          390406
+        ],
+        [
+          "Blus",
+          333722
+        ],
+        [
+          "Skjorta",
+          278653
+        ],
+        [
+          "Långklänning",
+          270635
+        ],
+        [
+          "Kjol",
+          267206
+        ],
+        [
+          "Kofta",
+          264009
+        ],
+        [
+          "Byxor",
+          247192
+        ],
+        [
+          "Huvtröja",
+          228265
+        ],
+        [
+          "Kavaj",
+          210109
+        ],
+        [
+          "Palazzobyxor",
+          201650
+        ],
+        [
+          "Långärmad t-shirt",
+          195804
+        ],
+        [
+          "Linne",
+          189626
+        ],
+        [
+          "Collegetröja",
+          188920
+        ],
+        [
+          "Kostymbyxor",
+          171074
+        ],
+        [
+          "Crop top",
+          142550
+        ],
+        [
+          "Shorts",
+          134434
+        ],
+        [
+          "Träningstights",
+          129367
+        ],
+        [
+          "Skjortklänning",
+          123843
+        ],
+        [
+          "Chinos",
+          118722
+        ],
+        [
+          "Omlottklänning",
+          116946
+        ],
+        [
+          "Body",
+          115682
+        ],
+        [
+          "Långkjol",
+          114979
+        ],
+        [
+          "Mjukisbyxor",
+          113096
+        ],
+        [
+          "Byxdress",
+          111227
+        ],
+        [
+          "Kortärmad skjorta",
+          107196
+        ],
+        [
+          "Jeansshorts",
+          104585
+        ],
+        [
+          "Leggings",
+          102632
+        ],
+        [
+          "Polotröja",
+          102226
+        ],
+        [
+          "Axelremsväska",
+          101069
+        ],
+        [
+          "Sneakers",
+          99429
+        ],
+        [
+          "Jacka",
+          89495
+        ],
+        [
+          "Pikétröja",
+          89198
+        ],
+        [
+          "Kappa",
+          81096
+        ],
+        [
+          "Träningsskor",
+          62757
+        ],
+        [
+          "BH",
+          62620
+        ],
+        [
+          "Cocktailklänning",
+          60299
+        ],
+        [
+          "Sport-BH",
+          59814
+        ],
+        [
+          "Sandaler",
+          59772
+        ],
+        [
+          "Cargobyxor",
+          58209
+        ],
+        [
+          "Jeanskjol",
+          55928
+        ],
+        [
+          "Sparkdräkt",
+          54062
+        ],
+        [
+          "Jeansjacka",
+          49098
+        ],
+        [
+          "Pyjamasbyxor",
+          48159
+        ],
+        [
+          "Träningsshorts",
+          48042
+        ],
+        [
+          "Set",
+          45941
+        ],
+        [
+          "Mjukisshorts",
+          44219
+        ],
+        [
+          "Tunika",
+          43997
+        ],
+        [
+          "Överskjorta",
+          43123
+        ],
+        [
+          "Träningsbyxor",
+          41541
+        ],
+        [
+          "Ytterväst",
+          40677
+        ],
+        [
+          "Bälte",
+          40590
+        ],
+        [
+          "Träningsjacka",
+          39889
+        ],
+        [
+          "Halternecktopp",
+          39387
+        ],
+        [
+          "Örhängen",
+          38145
+        ],
+        [
+          "Halsband",
+          37835
+        ],
+        [
+          "Tubtopp",
+          37734
+        ]
+      ],
+      "storlekskoder": [
+        [
+          "WMN-INT-M",
+          1603411
+        ],
+        [
+          "WMN-INT-S",
+          1594406
+        ],
+        [
+          "NO SIZE",
+          1087738
+        ],
+        [
+          "WMN-INT-L",
+          881154
+        ],
+        [
+          "WMN-EU-38",
+          619416
+        ],
+        [
+          "WMN-INT-XS",
+          582574
+        ],
+        [
+          "WMN-EU-36",
+          580245
+        ],
+        [
+          "WMN-EU-40",
+          471703
+        ],
+        [
+          "WMN-INT-XL",
+          384734
+        ],
+        [
+          "WMN-EU-42",
+          342593
+        ],
+        [
+          "WMN-EU-34",
+          285854
+        ],
+        [
+          "MEN-INT-M",
+          281178
+        ],
+        [
+          "MEN-INT-L",
+          255709
+        ],
+        [
+          "WMN-EU-44",
+          218436
+        ],
+        [
+          "CHILD-CM-140",
+          159883
+        ],
+        [
+          "MEN-INT-XL",
+          149128
+        ],
+        [
+          "CHILD-CM-128",
+          147475
+        ],
+        [
+          "CHILD-CM-152",
+          141132
+        ],
+        [
+          "CHILD-CM-110",
+          138143
+        ],
+        [
+          "CHILD-CM-104",
+          135660
+        ],
+        [
+          "CHILD-CM-116",
+          135460
+        ],
+        [
+          "MEN-INT-S",
+          132438
+        ],
+        [
+          "CHILD-CM-98",
+          125267
+        ],
+        [
+          "WMN-EU-46",
+          124802
+        ],
+        [
+          "ONE SIZE",
+          116972
+        ],
+        [
+          "CHILD-CM-134",
+          116430
+        ],
+        [
+          "CHILD-CM-122",
+          112887
+        ],
+        [
+          "SHOES-EU-38",
+          103218
+        ],
+        [
+          "CHILD-CM-92",
+          101968
+        ],
+        [
+          "SHOES-EU-39",
+          101146
+        ],
+        [
+          "CHILD-CM-164",
+          96343
+        ],
+        [
+          "CHILD-CM-146",
+          95493
+        ],
+        [
+          "CHILD-CM-86",
+          84912
+        ],
+        [
+          "SHOES-EU-40",
+          76336
+        ],
+        [
+          "CHILD-CM-158",
+          69883
+        ],
+        [
+          "WMN-EU-48",
+          68902
+        ],
+        [
+          "SHOES-EU-37",
+          68424
+        ],
+        [
+          "CHILD-CM-80",
+          65254
+        ],
+        [
+          "WMN-INT-2XL",
+          64997
+        ],
+        [
+          "WMN-EU-32",
+          61866
+        ],
+        [
+          "CHILD-CM-74",
+          60024
+        ],
+        [
+          "MEN-INT-XXL",
+          54058
+        ],
+        [
+          "CHILD-CM-68",
+          53337
+        ],
+        [
+          "PANTS-INCH-32",
+          45848
+        ],
+        [
+          "PANTS-INCH-30",
+          44069
+        ],
+        [
+          "PANTS-INCH-28",
+          43314
+        ],
+        [
+          "WMN-EU-50",
+          43088
+        ],
+        [
+          "CHILD-CM-62",
+          42388
+        ],
+        [
+          "PANTS-INCH-29",
+          41666
+        ],
+        [
+          "SHOES-EU-41",
+          40745
+        ],
+        [
+          "PANTS-INCH-27",
+          40717
+        ],
+        [
+          "WMN-INT-XXL",
+          38910
+        ],
+        [
+          "SHOES-EU-36",
+          38414
+        ],
+        [
+          "CHILD-CM-56",
+          35502
+        ],
+        [
+          "PANTS-INCH-31",
+          35073
+        ],
+        [
+          "MEN-EU-48",
+          33300
+        ],
+        [
+          "MEN-EU-50",
+          32436
+        ],
+        [
+          "CHILD-CM-170",
+          31999
+        ],
+        [
+          "PANTS-INCH-26",
+          31956
+        ],
+        [
+          "PANTS-INCH-34",
+          29873
+        ]
+      ]
+    },
+    {
+      "namn": "4. Filter för avdelning, skick, storlek, till salu och pris",
+      "ok": true,
+      "valdaVarden": {
+        "avdelning": "Man",
+        "skick": "Mycket bra",
+        "storlek": "MEN-INT-L"
+      },
+      "steg": [
+        {
+          "steg": "avdelning",
+          "filter": "metadata.demography:\"Man\"",
+          "traffar": 75493
+        },
+        {
+          "steg": "skick",
+          "filter": "metadata.demography:\"Man\" AND metadata.condition:\"Mycket bra\"",
+          "traffar": 29632
+        },
+        {
+          "steg": "storlek",
+          "filter": "metadata.demography:\"Man\" AND metadata.condition:\"Mycket bra\" AND sizes:\"MEN-INT-L\"",
+          "traffar": 7986
+        },
+        {
+          "steg": "till salu",
+          "filter": "metadata.demography:\"Man\" AND metadata.condition:\"Mycket bra\" AND sizes:\"MEN-INT-L\" AND isForSale:true",
+          "traffar": 7642
+        },
+        {
+          "steg": "pris max 300 (pricing.amount)",
+          "filter": "pricing.amount <= 300",
+          "traffar": 6158
+        },
+        {
+          "steg": "pris max 300 (price_SE.amount i öre)",
+          "filter": "price_SE.amount <= 30000",
+          "traffar": 6158
+        }
+      ]
+    },
+    {
+      "namn": "5. Exempelträffar med bild, märke, storlek, skick, pris och länk",
+      "ok": true,
+      "filter": "metadata.demography:\"Man\" AND metadata.condition:\"Mycket bra\" AND sizes:\"MEN-INT-L\" AND isForSale:true",
+      "traffar": [
+        {
+          "id": "LE80wX4BZr",
+          "marke": "Mango",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 130,
+          "pris_SE_ore": 13000,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              0
+            ],
+            [
+              "favoriteCountBucket",
+              0
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794260595026,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-13/LE80wX4BZr-b443-0.jpg",
+          "lank": "https://www.sellpy.se/item/LE80wX4BZr"
+        },
+        {
+          "id": "FGD0mCyRPo",
+          "marke": "Under Armour",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 275,
+          "pris_SE_ore": 27500,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              0
+            ],
+            [
+              "favoriteCountBucket",
+              0
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794260593694,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-13/FGD0mCyRPo-b9ea-0.jpg",
+          "lank": "https://www.sellpy.se/item/FGD0mCyRPo"
+        },
+        {
+          "id": "xPhC6WgzTa",
+          "marke": "H&M",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 70,
+          "pris_SE_ore": 7000,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              0
+            ],
+            [
+              "favoriteCountBucket",
+              0
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794260567367,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-7-k-9/xPhC6WgzTa-a435-0.jpg",
+          "lank": "https://www.sellpy.se/item/xPhC6WgzTa"
+        },
+        {
+          "id": "RL6UAFIp2D",
+          "marke": "Polo Ralph Lauren",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 900,
+          "pris_SE_ore": 90000,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              0
+            ],
+            [
+              "favoriteCountBucket",
+              0
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794260553174,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-1/RL6UAFIp2D-13b8-0.jpg",
+          "lank": "https://www.sellpy.se/item/RL6UAFIp2D"
+        },
+        {
+          "id": "aZw32uCVMi",
+          "marke": "Murrey",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 75,
+          "pris_SE_ore": 7500,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              0
+            ],
+            [
+              "favoriteCountBucket",
+              0
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794260534987,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-2/aZw32uCVMi-451b-0.jpg",
+          "lank": "https://www.sellpy.se/item/aZw32uCVMi"
+        },
+        {
+          "id": "nSWBBEjLBu",
+          "marke": "Ted Baker",
+          "typ": "Pikétröja",
+          "storlek": "MEN-INT-L",
+          "storlekskoder": [
+            "MEN-INT-L"
+          ],
+          "skick": "Mycket bra",
+          "avdelning": "Man",
+          "pris_pricing": 180,
+          "pris_SE_ore": 18000,
+          "tidigare_pris_falt": [
+            "priceDrop_SE"
+          ],
+          "favorit_falt": [
+            [
+              "favouriteCount",
+              6
+            ],
+            [
+              "favoriteCountBucket",
+              1
+            ]
+          ],
+          "tillSalu": true,
+          "reserverad_falt": [
+            [
+              "isReserved",
+              false
+            ]
+          ],
+          "saleStartedAt": 1794258708800,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-6-k-1/pY10mX8lMo-5689-0.jpg",
+          "lank": "https://www.sellpy.se/item/nSWBBEjLBu"
+        }
+      ]
+    },
+    {
+      "namn": "6. Gräns för antal träffar som går att bläddra fram",
+      "ok": true,
+      "totaltIIndex": 12882785,
+      "sidorEnligtSvar": 24,
+      "traffarSida10": 100,
+      "traffarSida11": 100,
+      "tolkning": "Ingen gräns vid 1 000 syntes"
+    },
+    {
+      "namn": "7. Testnotis till iPhone via ntfy",
+      "ok": true
+    }
+  ],
+  "valtIndex": {
+    "nyast": "prod_marketItem_se_saleStartedAt_desc",
+    "relevans": "prod_marketItem_se_relevance"
+  },
+  "storlekarForHerrPiketroja": [
+    [
+      "MEN-INT-M",
+      19832
+    ],
+    [
+      "MEN-INT-L",
+      19591
+    ],
+    [
+      "MEN-INT-XL",
+      12752
+    ],
+    [
+      "MEN-INT-S",
+      7981
+    ],
+    [
+      "MEN-INT-XXL",
+      5671
+    ],
+    [
+      "MEN-INT-3XL",
+      1611
+    ],
+    [
+      "MEN-INT-XS",
+      764
+    ],
+    [
+      "MEN-EU-52",
+      573
+    ],
+    [
+      "MEN-EU-50",
+      561
+    ],
+    [
+      "MEN-EU-54",
+      494
+    ],
+    [
+      "MEN-EU-48",
+      479
+    ],
+    [
+      "MEN-INT-4XL",
+      385
+    ],
+    [
+      "MEN-EU-56",
+      331
+    ],
+    [
+      "MEN-INT-2XL",
+      297
+    ],
+    [
+      "MEN-EU-58",
+      252
+    ],
+    [
+      "MEN-EU-46",
+      186
+    ],
+    [
+      "MEN-EU-44",
+      144
+    ],
+    [
+      "MEN-INT-5XL",
+      131
+    ],
+    [
+      "NO SIZE",
+      98
+    ],
+    [
+      "MEN-EU-42",
+      81
+    ],
+    [
+      "MEN-EU-40",
+      62
+    ],
+    [
+      "MEN-INT-XXXL",
+      61
+    ],
+    [
+      "MEN-INT-1XL",
+      42
+    ],
+    [
+      "MEN-INT-6XL",
+      41
+    ],
+    [
+      "MEN-EU-60",
+      35
+    ],
+    [
+      "MEN-INT-8XL",
+      33
+    ],
+    [
+      "XL",
+      24
+    ],
+    [
+      "MEN-EU-62",
+      22
+    ],
+    [
+      "MEN-INT-7XL",
+      19
+    ],
+    [
+      "MEN-INT-XXS",
+      17
+    ],
+    [
+      "MEN-INT-0XL",
+      15
+    ],
+    [
+      "MEN-EU-64",
+      10
+    ],
+    [
+      "ONE SIZE",
+      9
+    ],
+    [
+      "MEN-EU-66",
+      6
+    ],
+    [
+      "MEN-EU_COLLAR-42",
+      6
+    ],
+    [
+      "MEN-EU_COLLAR-43",
+      6
+    ],
+    [
+      "MEN-EU_COLLAR-44",
+      5
+    ],
+    [
+      "MEN-INT-9XL",
+      4
+    ],
+    [
+      "WMN-INT-M",
+      4
+    ],
+    [
+      "WMN-INT-XL",
+      4
+    ]
+  ]
+}

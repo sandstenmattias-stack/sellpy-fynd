@@ -1,0 +1,13 @@
+{
+  "appId": "M6WNFR0LVI",
+  "apiKey": "313e09c3b00b6e2da5dbe382cd1c8f4b",
+  "indexes": {
+    "marketItemIndexSaleStartDescending": "prod_marketItem_se_saleStartedAt_desc",
+    "marketItemIndexRelevance": "prod_marketItem_se_relevance",
+    "marketItemIndexPriceAscending": "prod_marketItem_se_price_asc",
+    "marketItemIndexPriceDescending": "prod_marketItem_se_price_desc_virtual"
+  },
+  "locale": "sv",
+  "hamtad": "2026-11-09T22:22:40.281Z",
+  "reserv": false
+}
