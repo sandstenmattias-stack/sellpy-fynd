@@ -1,0 +1,38 @@
+name: Prototyp – testa mot Sellpy
+
+on:
+  workflow_dispatch:
+    inputs:
+      ntfy_topic:
+        description: "Ntfy-ämne för en testnotis (lämna tomt för att hoppa över)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v4
+
+      - name: Installera Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kör testerna mot Sellpy
+        env:
+          NTFY_TOPIC: ${{ inputs.ntfy_topic }}
+        run: node prototyp/test.mjs
+
+      - name: Spara resultat och konfiguration i kodförrådet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add prototyp/resultat.json
+          if [ -f config.json ]; then git add config.json; fi
+          git commit -m "Prototyp: testresultat och Sellpy-konfiguration" || echo "Inget nytt att spara"
+          git push
