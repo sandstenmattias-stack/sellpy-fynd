@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sellpy-fynd">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f4f5f8">
+<title>Sellpy-fynd</title>
+<style>
+  /* Mobilapp: rubrik överst, en vy i taget, flikrad längst ner. Två plagg per rad. */
+  :root {
+    --bg: #f4f5f8;
+    --card: #ffffff;
+    --fg: #1b1d27;
+    --muted: #5f6475;
+    --line: #dfe1e9;
+    --accent: #3a45a6;
+    --accent-ink: #ffffff;
+    --accent-soft: #e6e8f7;
+    --new: #1d7a46;
+    --drop: #b4302a;
+    --warn-bg: #fff4dc;
+    --warn-fg: #6b4a00;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111218; --card: #1b1d26; --fg: #eceef5; --muted: #a2a7b8; --line: #2c2f3c;
+      --accent: #9ea7ff; --accent-ink: #12131a; --accent-soft: #262a48;
+      --new: #6fd19a; --drop: #ff8b84; --warn-bg: #3a2f12; --warn-fg: #f3d68d;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--fg); font: 16px/1.45 var(--font);
+    -webkit-text-size-adjust: 100%;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .wrap {
+    max-width: 760px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  header.top {
+    position: sticky; top: 0; z-index: 5; background: var(--bg);
+    padding-top: max(12px, env(safe-area-inset-top, 0px)); padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.top h1 { font-size: 1.35rem; margin: 0; letter-spacing: -.01em; }
+  header.top .profile { color: var(--muted); font-size: .85rem; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  main { display: grid; gap: 16px; padding-block: 16px; }
+  h2 { font-size: 1.1rem; margin: 0; text-wrap: balance; }
+  h3 { font-size: .8rem; margin: 0; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  p { margin: 0; }
+  .muted { color: var(--muted); }
+  .small { font-size: .85rem; }
+  a { color: var(--accent); }
+  .stack { display: grid; gap: 10px; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 10px; }
+  .notice { background: var(--warn-bg); color: var(--warn-fg); border-radius: 12px; padding: 12px 14px; font-size: .9rem; overflow-wrap: anywhere; }
+
+  /* Trendkort */
+  .trend { display: grid; gap: 6px; text-align: left; width: 100%; font: inherit; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; cursor: pointer; }
+  .trend:active { transform: scale(.99); }
+  .trend .name { font-weight: 700; font-size: 1.05rem; }
+  .trend .quote { color: var(--muted); font-size: .9rem; }
+  .chip { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; padding: 3px 8px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); }
+  .chip.new { background: color-mix(in srgb, var(--new) 16%, transparent); color: var(--new); }
+  .chip.plain { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+
+  /* Plaggrutnät */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (min-width: 640px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  .item { position: relative; display: grid; gap: 3px; min-width: 0; }
+  .item a.link { display: grid; gap: 3px; color: inherit; text-decoration: none; min-width: 0; }
+  .item .img { position: relative; width: 100%; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: var(--line); }
+  .item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .item .brand { font-weight: 700; overflow-wrap: anywhere; font-size: .95rem; }
+  .item .meta { color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+  .item .price { font-variant-numeric: tabular-nums; font-weight: 700; }
+  .item .price s { color: var(--muted); font-weight: 400; margin-left: 6px; }
+  .item .price .drop { color: var(--drop); }
+  .item .badge { position: absolute; left: 6px; top: 6px; }
+  .item.gone { opacity: .55; }
+  .fav { position: absolute; right: 6px; top: 6px; width: 36px; height: 36px; border-radius: 50%; border: 0;
+    background: color-mix(in srgb, var(--card) 88%, transparent); color: var(--fg); font-size: 18px; line-height: 36px; cursor: pointer; padding: 0; }
+  .fav[aria-pressed="true"] { color: var(--drop); }
+
+  /* Formulär */
+  label { display: grid; gap: 4px; font-size: .85rem; color: var(--muted); min-width: 0; }
+  input, select { font: inherit; font-size: 16px; color: var(--fg); background: var(--bg); border: 1px solid var(--line);
+    border-radius: 10px; padding: 10px; width: 100%; min-width: 0; }
+  .form2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form2 .wide { grid-column: 1 / -1; }
+  .check { display: flex; gap: 8px; align-items: center; color: var(--fg); font-size: .95rem; }
+  .check input { width: auto; }
+  button.primary, button.secondary { font: inherit; font-weight: 700; border-radius: 10px; padding: 11px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); color: var(--accent-ink); border: 0; }
+  button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+  button:disabled { opacity: .5; }
+  button.back { font: inherit; background: none; border: 0; color: var(--accent); padding: 0; cursor: pointer; justify-self: start; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  /* Flikrad */
+  nav.tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--card); border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+  nav.tabs .inner { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); }
+  nav.tabs a { display: grid; justify-items: center; gap: 2px; padding: 8px 2px 6px; font-size: .7rem; color: var(--muted); text-decoration: none; }
+  nav.tabs a svg { width: 24px; height: 24px; }
+  nav.tabs a[aria-current="page"] { color: var(--accent); font-weight: 700; }
+  @media (prefers-reduced-motion: reduce) { .trend:active { transform: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Sellpy-fynd</h1>
+    <div class="profile" id="profile">Laddar inställningar…</div>
+  </div>
+</header>
+
+<main class="wrap" id="view" aria-live="polite"></main>
+
+<nav class="tabs" aria-label="Flikar">
+  <div class="inner">
+    <a href="#i-ropet" data-tab="i-ropet">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>I ropet</a>
+    <a href="#bevakning" data-tab="bevakning">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21a2 2 0 004 0"/></svg>Bevakning</a>
+    <a href="#sok" data-tab="sok">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Sök</a>
+    <a href="#favoriter" data-tab="favoriter">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>Favoriter</a>
+    <a href="#installningar" data-tab="installningar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>Inställningar</a>
+  </div>
+</nav>
+
+<script>
+(() => {
+  'use strict';
+
+  // ---------- Grunddata ----------
+  const CONDITION_ORDER = ['nytt', 'mycket bra', 'bra', 'normalt', 'acceptabelt', 'dåligt'];
+  const PAGE_SIZE = 24;
+  const view = document.getElementById('view');
+  const state = {
+    cfg: null, trends: null, watchSettings: null, settings: null, fynd: null,
+    facetCache: {}, favorites: {}, search: { q: '', typ: '', grupp: 'alla', sort: 'nyast' },
+  };
+
+  const store = {
+    get(key, fallback) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; } },
+    set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* ignoreras */ } },
+    del(key) { try { localStorage.removeItem(key); } catch (e) { /* ignoreras */ } },
+  };
+
+  function repoRaw(path) {
+    const host = location.hostname;
+    if (!host.endsWith('.github.io')) return null;
+    const owner = host.replace('.github.io', '');
+    const repo = location.pathname.split('/').filter(Boolean)[0];
+    return repo ? `https://raw.githubusercontent.com/${owner}/${repo}/main/${path}` : null;
+  }
+
+  async function loadJson(path, { preferRaw = false } = {}) {
+    const local = `../${path}?t=${Date.now()}`;
+    const raw = repoRaw(path);
+    const tries = preferRaw && raw ? [`${raw}?t=${Date.now()}`, local] : [local, raw && `${raw}?t=${Date.now()}`];
+    for (const url of tries.filter(Boolean)) {
+      try { const r = await fetch(url, { cache: 'no-store' }); if (r.ok) return await r.json(); } catch (e) { /* nästa */ }
+    }
+    return null;
+  }
+
+  // ---------- Sellpys sökning ----------
+  function pickIndex(re) {
+    const idx = state.cfg.indexes || {};
+    const k = Object.keys(idx).find((key) => re.test(key));
+    return k ? idx[k] : Object.values(idx)[0];
+  }
+  const INDEX = {
+    get newest() { return pickIndex(/SaleStart.*Desc|saleStartedAt_desc/i); },
+    get relevance() { return pickIndex(/Relevance|^marketItemIndex$/i); },
+    get cheapest() { return pickIndex(/PriceAscending|price_asc/i); },
+  };
+
+  async function algolia(requests) {
+    const cfg = state.cfg;
+    if (!cfg) throw new Error('Söknyckeln saknas. Kör bevakningen en gång på GitHub.');
+    const url = `https://${cfg.appId}-dsn.algolia.net/1/indexes/*/queries` +
+      `?x-algolia-application-id=${encodeURIComponent(cfg.appId)}&x-algolia-api-key=${encodeURIComponent(cfg.apiKey)}`;
+    let r;
+    try {
+      r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: JSON.stringify({ requests }) });
+    } catch (e) {
+      throw new Error('Sökningen nådde inte Sellpy. Kontrollera nätet. Fliken Bevakning visar dagens fynd ändå.');
+    }
+    const text = await r.text();
+    if (!r.ok) throw new Error(`Sellpy svarade ${r.status}. Söknyckeln kan ha bytts ut; nästa bevakning hämtar en ny.`);
+    return JSON.parse(text).results || [];
+  }
+
+  const quote = (v) => `"${String(v).replace(/"/g, '\\"')}"`;
+  const orGroup = (field, values) => '(' + values.map((v) => `${field}:${quote(v)}`).join(' OR ') + ')';
+
+  function sizesFor(group) {
+    const s = state.settings.storlekar || {};
+    if (group && group !== 'alla') return s[group] || [];
+    return [...new Set(Object.values(s).flat())];
+  }
+
+  function baseFilters({ group = 'alla' } = {}) {
+    const st = state.settings;
+    const parts = [];
+    if (st.avdelningar && st.avdelningar.length) parts.push(orGroup('metadata.demography', st.avdelningar));
+    if (st.skick && st.skick.length) parts.push(orGroup('metadata.condition', st.skick));
+    const sizes = sizesFor(group);
+    if (sizes.length) parts.push(orGroup('sizes', sizes));
+    if (st.maxpris > 0) parts.push(`pricing.amount <= ${Number(st.maxpris)}`);
+    parts.push('isForSale:true');
+    return parts;
+  }
+
+  async function facetValues(fields, filters) {
+    const key = fields.join('|') + '§' + (filters || '');
+    if (state.facetCache[key]) return state.facetCache[key];
+    const [r] = await algolia([{ indexName: INDEX.relevance, query: '', hitsPerPage: 0, facets: fields, maxValuesPerFacet: 1000, ...(filters ? { filters } : {}) }]);
+    state.facetCache[key] = r.facets || {};
+    return state.facetCache[key];
+  }
+
+  async function trendQuery(t) {
+    const fields = [...new Set((t.filter || []).map((f) => f.falt))];
+    const groups = [];
+    let missing = false;
+    if (fields.length) {
+      const values = await facetValues(fields);
+      for (const f of t.filter) {
+        const re = new RegExp(f.matchar, 'i');
+        const hits = Object.keys(values[f.falt] || {}).filter((v) => re.test(v));
+        if (hits.length) groups.push(orGroup(f.falt, hits)); else missing = true;
+      }
+    }
+    const query = missing && t.reservSokord ? t.reservSokord : (t.sokord || '');
+    return { query, filters: [...baseFilters(), ...groups].join(' AND '), reserv: missing && !!t.reservSokord };
+  }
+
+  // ---------- Plagg ----------
+  function sizeLabel(code) {
+    if (!code) return '';
+    const c = String(code); let m;
+    if ((m = c.match(/^MEN-INT-(.+)$/))) return m[1];
+    if ((m = c.match(/^MEN-EU-(\d+)$/))) return `EU ${m[1]}`;
+    if ((m = c.match(/^PANTS-INCH-(\d+)$/))) return `W${m[1]}`;
+    if ((m = c.match(/^SHOES-EU-(.+)$/))) return `EU ${m[1]}`;
+    if ((m = c.match(/^WMN-INT-(.+)$/))) return `Dam ${m[1]}`;
+    if ((m = c.match(/^WMN-EU-(\d+)$/))) return `Dam EU ${m[1]}`;
+    if ((m = c.match(/^CHILD-CM-(\d+)$/))) return `${m[1]} cl`;
+    if (c === 'NO SIZE') return 'Ingen storlek';
+    if (c === 'ONE SIZE') return 'One size';
+    return c;
+  }
+
+  function fromHit(h) {
+    const m = h.metadata || {};
+    const pris = h.pricing && h.pricing.amount != null ? h.pricing.amount : (h.price_SE && h.price_SE.amount != null ? Math.round(h.price_SE.amount / 100) : null);
+    const drop = h.priceDrop_SE;
+    const tidigare = drop && typeof drop === 'object' && drop.amount != null ? Math.round(drop.amount / 100) : null;
+    const inner = m.measurement && m.measurement.innerLegLengthInCm;
+    return {
+      id: h.objectID, marke: m.brand || null, typ: m.type || null,
+      storlek: sizeLabel(Array.isArray(h.sizes) ? h.sizes[0] : m.size), skick: m.condition || null,
+      pris, tidigarePris: tidigare && pris != null && tidigare > pris ? tidigare : null,
+      bild: Array.isArray(h.images) ? h.images[0] : null, lank: `https://www.sellpy.se/item/${h.objectID}`,
+      innerben: inner || null, ut: h.saleStartedAt || null,
+      borta: h.isForSale === false || h.isReserved === true,
+    };
+  }
+
+  function el(tag, attrs = {}, ...children) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v;
+      else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? '' : v);
+    }
+    for (const c of children.flat()) if (c != null) e.append(c);
+    return e;
+  }
+
+  function itemCard(p, { isNew = false } = {}) {
+    const fav = !!state.favorites[p.id];
+    const img = el('div', { class: 'img' }, p.bild ? el('img', { src: p.bild, alt: [p.marke, p.typ].filter(Boolean).join(' '), loading: 'lazy' }) : null);
+    if (isNew) img.append(el('span', { class: 'chip new badge', text: 'Ny' }));
+    if (p.borta) img.append(el('span', { class: 'chip plain badge', text: 'Såld eller reserverad' }));
+    const meta = [p.typ, p.storlek, p.skick].filter(Boolean).join(' · ');
+    const price = el('span', { class: 'price' });
+    if (p.pris != null) {
+      price.append(el('span', { class: p.tidigarePris ? 'drop' : null, text: `${p.pris} kr` }));
+      if (p.tidigarePris) price.append(el('s', { text: `${p.tidigarePris} kr` }));
+    } else price.textContent = 'Pris saknas';
+    const link = el('a', { class: 'link', href: p.lank, target: '_blank', rel: 'noopener' },
+      img, el('span', { class: 'brand', text: p.marke || 'Okänt märke' }), el('span', { class: 'meta', text: meta }),
+      p.innerben ? el('span', { class: 'meta', text: `Innerben ${p.innerben} cm` }) : null, price);
+    const btn = el('button', { class: 'fav', type: 'button', 'aria-pressed': String(fav), 'aria-label': fav ? 'Ta bort från favoriter' : 'Spara som favorit', text: fav ? '♥' : '♡' });
+    btn.addEventListener('click', () => {
+      if (state.favorites[p.id]) delete state.favorites[p.id]; else state.favorites[p.id] = { ...p, sparad: new Date().toISOString() };
+      store.set('sf-favoriter', state.favorites);
+      const on = !!state.favorites[p.id];
+      btn.setAttribute('aria-pressed', String(on)); btn.textContent = on ? '♥' : '♡';
+      btn.setAttribute('aria-label', on ? 'Ta bort från favoriter' : 'Spara som favorit');
+    });
+    return el('div', { class: 'item' + (p.borta ? ' gone' : '') }, link, btn);
+  }
+
+  function grid(items, opts) { return el('div', { class: 'grid' }, items.map((p) => itemCard(p, opts && opts.isNew ? { isNew: opts.isNew(p) } : {}))); }
+  function notice(text) { return el('div', { class: 'notice', text }); }
+  function fmtDay(iso) {
+    try { return new Date(iso).toLocaleDateString('sv-SE', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return iso; }
+  }
+  function fmtDate(iso) {
+    try { return new Date(iso).toLocaleString('sv-SE', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch (e) { return iso; }
+  }
+
+  // Söker och ritar en lista med "Visa fler".
+  function resultList({ indexName, query, filters }) {
+    const box = el('div', { class: 'stack' });
+    const status = el('p', { class: 'muted small', text: 'Söker…' });
+    const list = el('div', { class: 'grid' });
+    const more = el('button', { class: 'secondary', type: 'button', text: 'Visa fler', hidden: true });
+    box.append(status, list, more);
+    let page = 0;
+    async function load() {
+      more.disabled = true;
+      try {
+        const [r] = await algolia([{ indexName, query, filters, page, hitsPerPage: PAGE_SIZE }]);
+        const items = (r.hits || []).map(fromHit).filter((p) => !p.borta);
+        for (const p of items) list.append(itemCard(p));
+        status.textContent = r.nbHits ? `${r.nbHits.toLocaleString('sv-SE')} plagg, nyast först.` : 'Inga plagg just nu med dina inställningar.';
+        page += 1;
+        more.hidden = !(r.nbPages > page);
+      } catch (e) {
+        status.replaceWith(notice(e.message));
+      } finally { more.disabled = false; }
+    }
+    more.addEventListener('click', load);
+    load();
+    return box;
+  }
+
+  // ---------- Vyer ----------
+  function activeTrends() {
+    const today = new Date().toISOString().slice(0, 10);
+    return ((state.trends && state.trends.trender) || []).filter((t) => !t.giltigTill || t.giltigTill >= today);
+  }
+  function sourceOf(t) { return (state.trends.kallor || {})[t.kalla] || {}; }
+
+  function renderTrends() {
+    if (!state.trends) return [notice('Trendlistan gick inte att läsa.')];
+    const trends = activeTrends();
+    const watched = trends.filter((t) => t.bevakas);
+    const others = trends.filter((t) => !t.bevakas);
+    const card = (t) => {
+      const src = sourceOf(t);
+      return el('button', { class: 'trend', type: 'button', onclick: () => { location.hash = `trend-${t.id}`; } },
+        el('div', { class: 'row' }, el('span', { class: 'name', text: t.namn }), t.bevakas ? el('span', { class: 'chip', text: 'Bevakas' }) : null,
+          t.avdelning && t.avdelning !== 'Ej angivet' ? el('span', { class: 'chip plain', text: t.avdelning }) : null),
+        el('span', { class: 'quote', text: `”${t.citat}”` }),
+        el('span', { class: 'small muted', text: `Sellpy, ${fmtDay(src.datum)}` }));
+    };
+    return [
+      el('div', { class: 'stack' }, el('h3', { text: 'Bevakas varje dag' }), ...watched.map(card)),
+      others.length ? el('div', { class: 'stack' }, el('h3', { text: 'Andra trender i samma rapport' }), ...others.map(card)) : null,
+      el('p', { class: 'small muted' }, 'Källa: ', el('a', { href: (state.trends.kallor['sellpy-2026-10'] || {}).url, target: '_blank', rel: 'noopener', text: 'Sellpys sökrapport, 1 okt 2026' }),
+        '. Trenderna visas till och med ', watched[0] ? fmtDay(watched[0].giltigTill) : '', '.'),
+    ];
+  }
+
+  function renderTrend(id) {
+    const t = activeTrends().find((x) => x.id === id);
+    if (!t) return [notice('Trenden finns inte längre.')];
+    const src = sourceOf(t);
+    const box = el('div', { class: 'stack' }, el('p', { class: 'muted small', text: 'Söker…' }));
+    trendQuery(t).then(({ query, filters, reserv }) => {
+      box.replaceChildren(
+        reserv ? notice('Sellpys filter för den här trenden hittades inte, så appen söker på ord istället. Träffarna kan bli mindre exakta.') : null,
+        resultList({ indexName: INDEX.newest, query, filters }));
+    }).catch((e) => box.replaceChildren(notice(e.message)));
+    return [
+      el('button', { class: 'back', type: 'button', text: '‹ Alla trender', onclick: () => { location.hash = 'i-ropet'; } }),
+      el('div', { class: 'panel' }, el('h2', { text: t.namn }), el('p', { class: 'muted', text: `”${t.citat}”` }),
+        el('p', { class: 'small' }, el('a', { href: src.url, target: '_blank', rel: 'noopener', text: `${src.utgivare || 'Sellpy'}, ${fmtDay(src.datum)}` }), src.dataperiod ? ` · ${src.dataperiod}` : '')),
+      box,
+    ];
+  }
+
+  function renderWatch() {
+    const f = state.fynd;
+    if (!f) return [notice('Bevakningen har inte körts än, eller så gick filen inte att läsa. Den körs varje morgon.')];
+    const out = [];
+    const head = el('div', { class: 'panel' },
+      el('h2', { text: f.nyaTotalt ? `${f.nyaTotalt} nya plagg sedan i går` : 'Inga nya plagg sedan i går' }),
+      el('p', { class: 'small muted', text: `Senast körd ${fmtDate(f.kord)}. Körs varje morgon.` }));
+    if (f.forstaKorningen) head.append(el('p', { class: 'small', text: 'Första körningen sparar bara läget. Från nästa körning märks nya plagg med ”Ny”.' }));
+    out.push(head);
+    if (f.status === 'fel') out.push(notice(`Senaste bevakningen misslyckades: ${f.fel || (f.trender.find((t) => t.fel) || {}).fel || 'okänt fel'}`));
+    if (f.status === 'delvis') out.push(notice('Några trender gick inte att söka i senaste körningen.'));
+    for (const t of f.trender || []) {
+      if (t.fel) { out.push(el('div', { class: 'stack' }, el('h3', { text: t.namn }), notice(t.fel))); continue; }
+      const newIds = new Set((t.nya || []).map((p) => p.id));
+      const items = [...(t.nya || []), ...(t.senaste || []).filter((p) => !newIds.has(p.id))].slice(0, 12);
+      out.push(el('div', { class: 'stack' },
+        el('div', { class: 'row' }, el('h3', { text: t.namn }), t.nya && t.nya.length ? el('span', { class: 'chip new', text: `${t.nya.length} nya` }) : null),
+        items.length ? grid(items, { isNew: (p) => newIds.has(p.id) }) : el('p', { class: 'muted small', text: 'Inga plagg just nu.' }),
+        el('button', { class: 'secondary', type: 'button', text: `Visa alla ${t.namn.toLowerCase()}`, onclick: () => { location.hash = `trend-${t.id}`; } })));
+    }
+    return out;
+  }
+
+  function renderSearch() {
+    const s = state.search;
+    const q = el('input', { id: 'sok-q', type: 'search', value: s.q, placeholder: 'Till exempel Levi’s, ullkofta, Stone Island', autocomplete: 'off', enterkeyhint: 'search' });
+    const typ = el('select', { id: 'sok-typ' }, el('option', { value: '', text: 'Alla plaggtyper' }));
+    const grupp = el('select', { id: 'sok-grupp' },
+      [['alla', 'Alla mina storlekar'], ['overdel', 'Överdel'], ['byxor', 'Byxor'], ['skor', 'Skor']].map(([v, t]) => el('option', { value: v, text: t, selected: s.grupp === v })));
+    const sort = el('select', { id: 'sok-sort' }, [['nyast', 'Nyast först'], ['billigast', 'Lägst pris']].map(([v, t]) => el('option', { value: v, text: t, selected: s.sort === v })));
+    const results = el('div', { class: 'stack' });
+    const form = el('form', { class: 'panel form2', role: 'search' },
+      el('label', { class: 'wide' }, 'Sökord', q), el('label', {}, 'Plaggtyp', typ), el('label', {}, 'Storlek', grupp),
+      el('label', { class: 'wide' }, 'Sortering', sort), el('button', { class: 'primary wide', type: 'submit', text: 'Sök' }));
+    const st = state.settings;
+    const dem = st.avdelningar && st.avdelningar.length ? orGroup('metadata.demography', st.avdelningar) : '';
+    facetValues(['metadata.type'], dem).then((fv) => {
+      const types = Object.entries(fv['metadata.type'] || {}).sort((a, b) => b[1] - a[1]).slice(0, 200);
+      for (const [v] of types) typ.append(el('option', { value: v, text: v, selected: s.typ === v }));
+    }).catch(() => {});
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      Object.assign(s, { q: q.value.trim(), typ: typ.value, grupp: grupp.value, sort: sort.value });
+      const parts = baseFilters({ group: s.grupp });
+      if (s.typ) parts.push(`metadata.type:${quote(s.typ)}`);
+      results.replaceChildren(resultList({ indexName: s.sort === 'billigast' ? INDEX.cheapest : INDEX.newest, query: s.q, filters: parts.join(' AND ') }));
+      q.blur();
+    });
+    return [form, results];
+  }
+
+  function renderFavorites() {
+    const favs = Object.values(state.favorites).sort((a, b) => (b.sparad || '').localeCompare(a.sparad || ''));
+    if (!favs.length) return [el('div', { class: 'panel' }, el('h2', { text: 'Inga favoriter än' }), el('p', { class: 'muted', text: 'Tryck på hjärtat på ett plagg så hamnar det här. Favoriterna sparas bara i den här telefonen.' }))];
+    const status = el('p', { class: 'small muted', text: 'Kollar om plaggen finns kvar…' });
+    const list = grid(favs);
+    const ids = favs.map((p) => p.id);
+    algolia([{ indexName: INDEX.relevance, query: '', hitsPerPage: Math.min(ids.length, 100), filters: orGroup('objectID', ids.slice(0, 100)) }])
+      .then(([r]) => {
+        const live = new Map((r.hits || []).map((h) => [h.objectID, fromHit(h)]));
+        for (const p of favs) {
+          const now = live.get(p.id);
+          state.favorites[p.id] = now ? { ...p, ...now, sparad: p.sparad } : { ...p, borta: true };
+        }
+        store.set('sf-favoriter', state.favorites);
+        list.replaceWith(grid(Object.values(state.favorites).sort((a, b) => (b.sparad || '').localeCompare(a.sparad || ''))));
+        status.textContent = `${favs.length} favoriter. Sålda och reserverade plagg är nedtonade.`;
+      })
+      .catch(() => { status.textContent = `${favs.length} favoriter. Kunde inte kolla om de finns kvar just nu.`; });
+    return [status, list];
+  }
+
+  function renderSettings() {
+    const st = state.settings;
+    const ws = state.watchSettings || {};
+    const panel = el('form', { class: 'panel stack' });
+    const demOptions = ['Man', 'Unisex (Vuxen)', 'Kvinna'];
+    const dems = demOptions.map((d) => el('label', { class: 'check' }, el('input', { type: 'checkbox', name: 'dem', value: d, checked: st.avdelningar.includes(d) }), d));
+    const conds = ['Nytt', 'Mycket bra', 'Bra', 'Acceptabelt'].map((c) => el('label', { class: 'check' }, el('input', { type: 'checkbox', name: 'cond', value: c, checked: st.skick.includes(c) }), c));
+    const mk = (group, label) => {
+      const sel = el('select', { id: `size-${group}`, name: group }, el('option', { value: '', text: 'Ingen' }));
+      const cur = (st.storlekar[group] || [])[0] || '';
+      if (cur) sel.append(el('option', { value: cur, text: sizeLabel(cur), selected: true }));
+      return { group, sel, wrap: el('label', {}, label, sel) };
+    };
+    const sizeSel = [mk('overdel', 'Överdel'), mk('byxor', 'Byxor, midja'), mk('skor', 'Skor')];
+    const max = el('input', { id: 'maxpris', type: 'number', inputmode: 'numeric', min: '0', value: st.maxpris || '', placeholder: 'Inget' });
+    panel.append(
+      el('h2', { text: 'Appens inställningar' }),
+      el('h3', { text: 'Avdelning' }), el('div', { class: 'row' }, dems),
+      el('h3', { text: 'Storlekar' }), el('div', { class: 'form2' }, sizeSel.map((x) => x.wrap)),
+      el('p', { class: 'small muted', text: `Byxlängd: Sellpy filtrerar bara på midja. Längden ${ws.byxlangdTum || st.byxlangdTum || 32} visas som innerbenslängd på plaggen när Sellpy har den.` }),
+      el('h3', { text: 'Skick' }), el('div', { class: 'row' }, conds),
+      el('label', {}, 'Maxpris (kr)', max),
+      el('button', { class: 'primary', type: 'submit', text: 'Spara' }),
+      el('button', { class: 'secondary', type: 'button', text: 'Återställ till bevakningens inställningar', onclick: () => { store.del('sf-installningar'); state.settings = defaultSettings(); updateProfile(); render(); } }));
+    // Fyll storlekslistorna med Sellpys egna koder.
+    facetValues(['sizes'], orGroup('metadata.demography', ['Man', 'Unisex (Vuxen)'])).then((fv) => {
+      const codes = Object.keys(fv.sizes || {});
+      const sets = { overdel: codes.filter((c) => /^MEN-(INT|EU)-/.test(c)), byxor: codes.filter((c) => /^PANTS-INCH-/.test(c)), skor: codes.filter((c) => /^SHOES-EU-/.test(c)) };
+      const order = (a, b) => (parseFloat(a.replace(/\D+/g, ' ')) || 0) - (parseFloat(b.replace(/\D+/g, ' ')) || 0) || a.localeCompare(b);
+      for (const { group, sel } of sizeSel) {
+        const cur = sel.value;
+        const list = sets[group];
+        if (cur && !list.includes(cur)) list.push(cur);
+        sel.replaceChildren(el('option', { value: '', text: 'Ingen' }));
+        for (const c of list.sort(order)) sel.append(el('option', { value: c, text: sizeLabel(c), selected: c === cur }));
+      }
+    }).catch(() => {});
+    panel.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const checked = (name) => [...panel.querySelectorAll(`input[name="${name}"]:checked`)].map((i) => i.value);
+      state.settings = {
+        ...state.settings,
+        avdelningar: checked('dem'), skick: checked('cond'),
+        storlekar: Object.fromEntries(sizeSel.map(({ group, sel }) => [group, sel.value ? [sel.value] : []])),
+        maxpris: parseInt(max.value, 10) > 0 ? parseInt(max.value, 10) : null,
+      };
+      store.set('sf-installningar', state.settings);
+      state.facetCache = {};
+      updateProfile();
+      saved.hidden = false;
+    });
+    const saved = el('p', { class: 'small', text: 'Sparat. Gäller appen i den här telefonen.', hidden: true });
+    const watchInfo = el('div', { class: 'panel' },
+      el('h2', { text: 'Bevakningens inställningar' }),
+      el('p', { class: 'small muted', text: 'Den dagliga notisen använder de här valen. De ändras i filen data/bevakning.json på GitHub, så säg till Claude om du vill byta.' }),
+      el('p', { text: profileText(ws) }));
+    return [panel, saved, watchInfo];
+  }
+
+  // ---------- Inställningar ----------
+  function defaultSettings() {
+    const ws = state.watchSettings || {};
+    return {
+      avdelningar: ws.avdelningar || ['Man'],
+      storlekar: ws.storlekar || {},
+      skick: ws.skick || ['Nytt', 'Mycket bra'],
+      maxpris: ws.maxpris || null,
+      byxlangdTum: ws.byxlangdTum || null,
+    };
+  }
+  function profileText(s) {
+    if (!s || !s.storlekar) return '';
+    const sizes = [...new Set(Object.values(s.storlekar).flat())].map(sizeLabel);
+    if (s.byxlangdTum && (s.storlekar.byxor || []).length) {
+      const i = sizes.findIndex((x) => /^W\d/.test(x));
+      if (i >= 0) sizes[i] = `${sizes[i]}/L${s.byxlangdTum}`;
+    }
+    return [sizes.join(' · '), (s.skick || []).join(' eller '), s.maxpris ? `max ${s.maxpris} kr` : null].filter(Boolean).join('  ·  ');
+  }
+  function updateProfile() { document.getElementById('profile').textContent = profileText(state.settings); }
+
+  // ---------- Navigering ----------
+  const TABS = ['i-ropet', 'bevakning', 'sok', 'favoriter', 'installningar'];
+  function render() {
+    const hash = (location.hash || '#i-ropet').slice(1);
+    let tab = TABS.includes(hash) ? hash : (hash.startsWith('trend-') ? 'i-ropet' : 'i-ropet');
+    for (const a of document.querySelectorAll('nav.tabs a')) {
+      if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    }
+    let content;
+    try {
+      if (hash.startsWith('trend-')) content = renderTrend(hash.slice(6));
+      else if (tab === 'bevakning') content = renderWatch();
+      else if (tab === 'sok') content = renderSearch();
+      else if (tab === 'favoriter') content = renderFavorites();
+      else if (tab === 'installningar') content = renderSettings();
+      else content = renderTrends();
+    } catch (e) { content = [notice(e.message)]; }
+    view.replaceChildren(...[].concat(content).filter(Boolean));
+    window.scrollTo(0, 0);
+  }
+
+  async function start() {
+    view.replaceChildren(el('p', { class: 'muted', text: 'Laddar…' }));
+    const [cfg, trends, ws, fynd] = await Promise.all([
+      loadJson('config.json', { preferRaw: true }), loadJson('data/trender.json'),
+      loadJson('data/bevakning.json'), loadJson('data/fynd.json', { preferRaw: true }),
+    ]);
+    Object.assign(state, { cfg, trends, watchSettings: ws, fynd });
+    state.settings = { ...defaultSettings(), ...store.get('sf-installningar', {}) };
+    state.favorites = store.get('sf-favoriter', {});
+    updateProfile();
+    render();
+  }
+
+  window.addEventListener('hashchange', render);
+  start();
+})();
+</script>
+</body>
+</html>
