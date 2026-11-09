@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sellpy-fynd prototyp</title>
+<meta name="robots" content="noindex">
+<style>
+  /* Testsida: kontrollista överst, sökformulär, två plagg per rad. */
+  :root {
+    --bg: #f6f7f5;
+    --card: #ffffff;
+    --fg: #1d2420;
+    --muted: #5d6862;
+    --line: #dde2de;
+    --accent: #1f6f5c;
+    --ok: #1f7a3d;
+    --bad: #b3261e;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121614; --card: #1b201d; --fg: #e8ece9; --muted: #9aa59f;
+      --line: #2c3430; --accent: #5fc2a6; --ok: #6fd18f; --bad: #ff8a80;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.45 var(--font);
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+             max(24px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+  main { max-width: 720px; margin: 0 auto; display: grid; gap: 20px; }
+  h1 { font-size: 1.4rem; margin: 0; }
+  h2 { font-size: 1rem; margin: 0 0 8px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .sub { color: var(--muted); margin: 4px 0 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  ul.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  ul.checks li { display: grid; grid-template-columns: 44px 1fr; gap: 8px; align-items: baseline; }
+  .tag { font-size: .75rem; font-weight: 700; letter-spacing: .04em; color: var(--muted); }
+  .tag.ok { color: var(--ok); }
+  .tag.bad { color: var(--bad); }
+  .note { color: var(--muted); font-size: .85rem; grid-column: 2; }
+  form { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+  label { display: grid; gap: 4px; font-size: .85rem; color: var(--muted); min-width: 0; }
+  label.wide { grid-column: 1 / -1; }
+  input, select, button {
+    font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line);
+    border-radius: 8px; padding: 10px; width: 100%; min-width: 0;
+  }
+  button { grid-column: 1 / -1; background: var(--accent); color: var(--card); border: 0; font-weight: 700; }
+  button:disabled { opacity: .5; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  #status { color: var(--muted); margin: 0 0 10px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .item { display: grid; gap: 4px; min-width: 0; color: inherit; text-decoration: none; }
+  .item img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 8px; background: var(--line); }
+  .item .brand { font-weight: 700; overflow-wrap: anywhere; }
+  .item .meta { color: var(--muted); font-size: .85rem; overflow-wrap: anywhere; }
+  .item .price { font-variant-numeric: tabular-nums; font-weight: 700; }
+  .error { color: var(--bad); overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sellpy-fynd: prototyp</h1>
+    <p class="sub">Testar att sökningen fungerar från din telefon innan appen byggs.</p>
+  </header>
+
+  <section aria-labelledby="checks-h">
+    <h2 id="checks-h">Kontroller</h2>
+    <ul class="checks" id="checks"></ul>
+  </section>
+
+  <section aria-labelledby="form-h">
+    <h2 id="form-h">Testsök</h2>
+    <form id="form">
+      <label class="wide">Sökord
+        <input id="q" value="pikétröja" autocomplete="off">
+      </label>
+      <label>Avdelning
+        <select id="dem"><option value="">Laddar…</option></select>
+      </label>
+      <label>Lägsta skick
+        <select id="cond"><option value="">Laddar…</option></select>
+      </label>
+      <label>Storlek
+        <select id="size"><option value="">Alla</option></select>
+      </label>
+      <label>Maxpris (kr)
+        <input id="max" type="number" inputmode="numeric" min="0" placeholder="Inget">
+      </label>
+      <button id="go" type="submit" disabled>Sök</button>
+    </form>
+  </section>
+
+  <section aria-labelledby="res-h">
+    <h2 id="res-h">Träffar</h2>
+    <p id="status">Inga sökningar än.</p>
+    <div class="grid" id="results"></div>
+  </section>
+</main>
+
+<script>
+(() => {
+  // Sellpys egna skickvärden (kontrollerade mot Sellpy 9 nov 2026), bäst först.
+  // "Normalt" är ovanligt och placeras efter "Bra" tills vi vet mer.
+  const CONDITION_ORDER = ['nytt', 'mycket bra', 'bra', 'normalt', 'acceptabelt', 'dåligt'];
+  const $ = (id) => document.getElementById(id);
+  const checks = {};
+  let cfg = null;
+  let idx = {};
+  let forSaleFilterWorks = null;
+  let conditionValues = [];
+
+  function check(key, label, state, note) {
+    let li = checks[key];
+    if (!li) {
+      li = document.createElement('li');
+      li.innerHTML = '<span class="tag"></span><span class="label"></span><span class="note"></span>';
+      $('checks').appendChild(li);
+      checks[key] = li;
+    }
+    const tag = li.querySelector('.tag');
+    tag.textContent = state === true ? 'OK' : state === false ? 'FEL' : '…';
+    tag.className = 'tag' + (state === true ? ' ok' : state === false ? ' bad' : '');
+    li.querySelector('.label').textContent = label;
+    li.querySelector('.note').textContent = note || '';
+  }
+
+  function repoRawUrl() {
+    const host = location.hostname;
+    if (!host.endsWith('.github.io')) return null;
+    const owner = host.replace('.github.io', '');
+    const repo = location.pathname.split('/').filter(Boolean)[0];
+    if (!repo) return null;
+    return `https://raw.githubusercontent.com/${owner}/${repo}/main/config.json`;
+  }
+
+  async function loadConfig() {
+    const tries = [`../config.json?t=${Date.now()}`];
+    const raw = repoRawUrl();
+    if (raw) tries.push(`${raw}?t=${Date.now()}`);
+    for (const url of tries) {
+      try {
+        const r = await fetch(url, { cache: 'no-store' });
+        if (r.ok) return await r.json();
+      } catch (e) { /* prova nästa */ }
+    }
+    return null;
+  }
+
+  function pickIndex(re) {
+    const k = Object.keys(cfg.indexes || {}).find((key) => re.test(key));
+    return k ? cfg.indexes[k] : Object.values(cfg.indexes || {})[0];
+  }
+
+  async function algolia(requests) {
+    const url = `https://${cfg.appId}-dsn.algolia.net/1/indexes/*/queries` +
+      `?x-algolia-application-id=${encodeURIComponent(cfg.appId)}` +
+      `&x-algolia-api-key=${encodeURIComponent(cfg.apiKey)}`;
+    const r = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: JSON.stringify({ requests }),
+    });
+    const text = await r.text();
+    if (!r.ok) throw new Error(`Sökningen svarade ${r.status}: ${text.slice(0, 160)}`);
+    return JSON.parse(text).results || [];
+  }
+
+  const q = (v) => `"${String(v).replace(/"/g, '\\"')}"`;
+
+  function fill(select, values, { blank, keep } = {}) {
+    const prev = keep ? select.value : '';
+    select.innerHTML = '';
+    if (blank) select.add(new Option(blank, ''));
+    for (const [v, n] of values) select.add(new Option(n == null ? v : `${v} (${n})`, v));
+    if (prev && [...select.options].some((o) => o.value === prev)) select.value = prev;
+  }
+
+  function rank(v) {
+    const i = CONDITION_ORDER.indexOf(String(v).toLowerCase());
+    return i === -1 ? 99 : i;
+  }
+
+  function baseFilters({ withSize = true } = {}) {
+    const parts = [];
+    if ($('dem').value) parts.push(`metadata.demography:${q($('dem').value)}`);
+    const minCond = $('cond').value;
+    if (minCond) {
+      const ok = conditionValues.filter((v) => rank(v) <= rank(minCond));
+      parts.push('(' + ok.map((v) => `metadata.condition:${q(v)}`).join(' OR ') + ')');
+    }
+    if (withSize && $('size').value) parts.push(`sizes:${q($('size').value)}`);
+    const max = parseInt($('max').value, 10);
+    if (max > 0) parts.push(`pricing.amount <= ${max}`);
+    return parts;
+  }
+
+  async function loadSizes() {
+    try {
+      const filters = baseFilters({ withSize: false }).join(' AND ');
+      const [r] = await algolia([{ indexName: idx.rel, query: $('q').value.trim(), hitsPerPage: 0,
+        facets: ['sizes'], maxValuesPerFacet: 60, ...(filters ? { filters } : {}) }]);
+      const sizes = Object.entries((r.facets || {}).sizes || {}).sort((a, b) => b[1] - a[1]);
+      fill($('size'), sizes, { blank: 'Alla', keep: true });
+    } catch (e) { /* storlekslistan är inte kritisk */ }
+  }
+
+  function price(h) {
+    if (h.pricing && typeof h.pricing.amount === 'number') return h.pricing.amount;
+    if (h.price_SE && typeof h.price_SE.amount === 'number') return Math.round(h.price_SE.amount / 100);
+    return null;
+  }
+
+  function card(h) {
+    const m = h.metadata || {};
+    const a = document.createElement('a');
+    a.className = 'item';
+    a.href = `https://www.sellpy.se/item/${encodeURIComponent(h.objectID)}`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const img = document.createElement('img');
+    img.loading = 'lazy';
+    img.alt = [m.brand, m.type].filter(Boolean).join(' ');
+    if (Array.isArray(h.images) && h.images[0]) img.src = h.images[0];
+    const brand = document.createElement('span'); brand.className = 'brand'; brand.textContent = m.brand || 'Okänt märke';
+    const meta = document.createElement('span'); meta.className = 'meta';
+    meta.textContent = [m.type, m.size, m.condition].filter(Boolean).join(' · ');
+    const p = document.createElement('span'); p.className = 'price';
+    const kr = price(h); p.textContent = kr == null ? 'Pris saknas' : `${kr} kr`;
+    a.append(img, brand, meta, p);
+    return a;
+  }
+
+  async function runSearch() {
+    const go = $('go');
+    go.disabled = true;
+    $('status').textContent = 'Söker…';
+    $('results').innerHTML = '';
+    const parts = baseFilters();
+    const attempt = async (useForSale) => {
+      const f = useForSale ? [...parts, 'isForSale:true'] : parts;
+      const [r] = await algolia([{ indexName: idx.newest, query: $('q').value.trim(), hitsPerPage: 40,
+        ...(f.length ? { filters: f.join(' AND ') } : {}) }]);
+      return r;
+    };
+    try {
+      let r;
+      if (forSaleFilterWorks !== false) {
+        try { r = await attempt(true); forSaleFilterWorks = true; }
+        catch (e) { forSaleFilterWorks = false; }
+      }
+      if (!r) r = await attempt(false);
+      let hits = r.hits || [];
+      if (!forSaleFilterWorks) hits = hits.filter((h) => h.isForSale !== false);
+      check('filter', 'Sökning med avdelning, skick och storlek', true, `${r.nbHits} träffar totalt`);
+      check('forsale', 'Bara köpbara plagg visas', true,
+        forSaleFilterWorks ? 'Filtreras i sökningen' : 'Filtreras i telefonen efter sökningen');
+      $('status').textContent = hits.length
+        ? `Visar ${hits.length} av ${r.nbHits} träffar, nyast först.`
+        : 'Inga träffar. Prova ett annat sökord eller färre filter.';
+      for (const h of hits) $('results').appendChild(card(h));
+    } catch (e) {
+      check('filter', 'Sökning med avdelning, skick och storlek', false, e.message);
+      $('status').innerHTML = '';
+      const err = document.createElement('span'); err.className = 'error'; err.textContent = e.message;
+      $('status').appendChild(err);
+    } finally {
+      go.disabled = false;
+    }
+  }
+
+  async function start() {
+    check('config', 'Söknyckel hittad (config.json)', null);
+    check('search', 'Sökning direkt från telefonen', null);
+    check('facets', 'Filtervärden hämtade från Sellpy', null);
+    check('filter', 'Sökning med avdelning, skick och storlek', null, 'Tryck på Sök');
+    check('forsale', 'Bara köpbara plagg visas', null, 'Tryck på Sök');
+
+    cfg = await loadConfig();
+    if (!cfg || !cfg.appId || !cfg.apiKey) {
+      check('config', 'Söknyckel hittad (config.json)', false,
+        'Ingen config.json än. Kör testet under Actions först, vänta en minut och ladda om sidan.');
+      return;
+    }
+    check('config', 'Söknyckel hittad (config.json)', true,
+      `Hämtad ${String(cfg.hamtad || '').slice(0, 10)}${cfg.reserv ? ', reservnyckel' : ''}`);
+    idx = { newest: pickIndex(/SaleStart.*Desc|saleStartedAt_desc/i), rel: pickIndex(/Relevance|^marketItemIndex$/i) };
+
+    try {
+      const [r] = await algolia([{ indexName: idx.rel, query: '', hitsPerPage: 0,
+        facets: ['metadata.demography', 'metadata.condition'], maxValuesPerFacet: 50 }]);
+      check('search', 'Sökning direkt från telefonen', true, `${r.nbHits} plagg i indexet`);
+      const f = r.facets || {};
+      const dems = Object.entries(f['metadata.demography'] || {}).sort((a, b) => b[1] - a[1]);
+      const conds = Object.entries(f['metadata.condition'] || {}).sort((a, b) => rank(a[0]) - rank(b[0]));
+      conditionValues = conds.map(([v]) => v);
+      fill($('dem'), dems, { blank: 'Alla' });
+      const herr = dems.find(([v]) => /^(man|män|herr|men)/i.test(v));
+      if (herr) $('dem').value = herr[0];
+      fill($('cond'), conds.map(([v]) => [v, null]), { blank: 'Alla' });
+      const mb = conds.find(([v]) => /mycket bra/i.test(v));
+      if (mb) $('cond').value = mb[0];
+      check('facets', 'Filtervärden hämtade från Sellpy', dems.length > 0 && conds.length > 0,
+        `${dems.length} avdelningar, ${conds.length} skick`);
+      await loadSizes();
+      $('go').disabled = false;
+    } catch (e) {
+      check('search', 'Sökning direkt från telefonen', false, e.message);
+      check('facets', 'Filtervärden hämtade från Sellpy', false, 'Kräver att sökningen fungerar');
+    }
+  }
+
+  $('form').addEventListener('submit', (e) => { e.preventDefault(); runSearch(); });
+  for (const id of ['dem', 'cond']) $(id).addEventListener('change', loadSizes);
+  $('q').addEventListener('change', loadSizes);
+  start();
+})();
+</script>
+</body>
+</html>
