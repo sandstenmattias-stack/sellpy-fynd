@@ -1,0 +1,15 @@
+{
+  "kommentar": "Inställningar för den dagliga bevakningen och appens standardval. Storlekarna är Sellpys egna koder.",
+  "avdelningar": ["Man", "Unisex (Vuxen)"],
+  "storlekar": {
+    "overdel": ["MEN-INT-L"],
+    "byxor": ["PANTS-INCH-33"],
+    "skor": ["SHOES-EU-45"]
+  },
+  "byxlangdTum": 32,
+  "skick": ["Nytt", "Mycket bra"],
+  "maxpris": null,
+  "plaggPerTrend": 40,
+  "sparaSeddaDagar": 60,
+  "appAdress": "https://sandstenmattias-stack.github.io/sellpy-fynd/app/"
+}
