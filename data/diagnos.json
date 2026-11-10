@@ -1,0 +1,417 @@
+{
+  "kord": "2026-11-10T01:20:06.535Z",
+  "prisfallExempel": [
+    {
+      "id": "ZClFiAFBLy",
+      "pricing": {
+        "amount": 75,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "showUntil": 1794068925709,
+        "oldPrice": {
+          "amount": 8000,
+          "currency": "SEK"
+        }
+      }
+    },
+    {
+      "id": "43bviBy0ya",
+      "pricing": {
+        "amount": 170,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "showUntil": 1793605144087,
+        "oldPrice": {
+          "amount": 20000,
+          "currency": "SEK"
+        }
+      }
+    },
+    {
+      "id": "RMuxHhZiou",
+      "pricing": {
+        "amount": 65,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "showUntil": 1794068323839,
+        "oldPrice": {
+          "amount": 7000,
+          "currency": "SEK"
+        }
+      }
+    }
+  ],
+  "byxor": {
+    "storlekstext": [
+      [
+        "PANTS-INCH-33",
+        20339
+      ]
+    ],
+    "byxlangd": [
+      [
+        "24",
+        1
+      ],
+      [
+        "25",
+        2
+      ],
+      [
+        "26",
+        3
+      ],
+      [
+        "27",
+        2
+      ],
+      [
+        "28",
+        17
+      ],
+      [
+        "29",
+        11
+      ],
+      [
+        "30",
+        1879
+      ],
+      [
+        "31",
+        25
+      ],
+      [
+        "32",
+        7160
+      ],
+      [
+        "33",
+        77
+      ],
+      [
+        "34",
+        4423
+      ],
+      [
+        "35",
+        16
+      ],
+      [
+        "36",
+        452
+      ],
+      [
+        "38",
+        7
+      ],
+      [
+        "40",
+        3
+      ]
+    ],
+    "innerbenCm": [
+      [
+        "0",
+        3
+      ],
+      [
+        "43",
+        4
+      ],
+      [
+        "61",
+        10
+      ],
+      [
+        "62",
+        9
+      ],
+      [
+        "63",
+        4
+      ],
+      [
+        "64",
+        20
+      ],
+      [
+        "65",
+        35
+      ],
+      [
+        "66",
+        38
+      ],
+      [
+        "67",
+        31
+      ],
+      [
+        "68",
+        84
+      ],
+      [
+        "69",
+        57
+      ],
+      [
+        "70",
+        173
+      ],
+      [
+        "71",
+        167
+      ],
+      [
+        "72",
+        221
+      ],
+      [
+        "73",
+        271
+      ],
+      [
+        "74",
+        372
+      ],
+      [
+        "75",
+        573
+      ],
+      [
+        "76",
+        626
+      ],
+      [
+        "77",
+        627
+      ],
+      [
+        "78",
+        816
+      ],
+      [
+        "79",
+        628
+      ],
+      [
+        "80",
+        1396
+      ],
+      [
+        "81",
+        814
+      ],
+      [
+        "82",
+        1000
+      ],
+      [
+        "83",
+        715
+      ],
+      [
+        "84",
+        719
+      ],
+      [
+        "85",
+        691
+      ],
+      [
+        "86",
+        533
+      ],
+      [
+        "87",
+        365
+      ],
+      [
+        "88",
+        344
+      ],
+      [
+        "89",
+        166
+      ],
+      [
+        "90",
+        166
+      ],
+      [
+        "91",
+        64
+      ],
+      [
+        "92",
+        55
+      ],
+      [
+        "93",
+        21
+      ],
+      [
+        "94",
+        16
+      ],
+      [
+        "95",
+        10
+      ],
+      [
+        "96",
+        10
+      ],
+      [
+        "82.5",
+        7
+      ],
+      [
+        "77.5",
+        4
+      ]
+    ],
+    "exempel": [
+      {
+        "id": "8pceT1tGlw",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Edwin",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 82,
+            "innerLegLengthInCm": 85
+          }
+        }
+      },
+      {
+        "id": "pPU8oDSeVx",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "32",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "501",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "pantsFit": "Straight",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 86,
+            "innerLegLengthInCm": 82
+          }
+        }
+      },
+      {
+        "id": "QSWOF2skJy",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "id": "3205789011",
+              "type": "Färgförlust",
+              "location": "Ben",
+              "category": "Defekt"
+            }
+          ],
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Take Two",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Bra",
+          "measurement": {
+            "waistInCm": 96,
+            "innerLegLengthInCm": 80
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "ULxZo8ATG0",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "550",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "ID",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "S40154",
+          "measurement": {
+            "waistInCm": 80,
+            "innerLegLengthInCm": 81
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "WLRXdVmeXe",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Elastan",
+            "Ekologisk bomull"
+          ],
+          "brand": "Nudie Jeans",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Nytt",
+          "measurement": {
+            "waistInCm": 78,
+            "innerLegLengthInCm": 86
+          }
+        }
+      }
+    ]
+  }
+}

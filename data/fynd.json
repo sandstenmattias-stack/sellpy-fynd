@@ -1,0 +1,809 @@
+{
+  "kord": "2026-11-10T01:20:06.535Z",
+  "status": "ok",
+  "forstaKorningen": true,
+  "nyaTotalt": 0,
+  "installningar": {
+    "avdelningar": [
+      "Man",
+      "Unisex (Vuxen)"
+    ],
+    "storlekar": {
+      "overdel": [
+        "L"
+      ],
+      "byxor": [
+        "W33"
+      ],
+      "skor": [
+        "EU 45"
+      ]
+    },
+    "skick": [
+      "Nytt",
+      "Mycket bra"
+    ],
+    "maxpris": null
+  },
+  "trender": [
+    {
+      "id": "piketroja",
+      "namn": "Pikétröjor",
+      "antalTotalt": 6773,
+      "sokord": "",
+      "filter": "(metadata.demography:\"Man\" OR metadata.demography:\"Unisex (Vuxen)\") AND (metadata.condition:\"Nytt\" OR metadata.condition:\"Mycket bra\") AND (sizes:\"MEN-INT-L\" OR sizes:\"PANTS-INCH-33\" OR sizes:\"SHOES-EU-45\") AND isForSale:true AND (metadata.type:\"Pikétröja\")",
+      "reservSokordAnvant": false,
+      "nya": [],
+      "senaste": [
+        {
+          "id": "kxQDzk8slV",
+          "marke": "Kappa",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 110,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-k-11/kxQDzk8slV-55b8-0.jpg",
+          "lank": "https://www.sellpy.se/item/kxQDzk8slV",
+          "ut": 1794264906780
+        },
+        {
+          "id": "LE80wX4BZr",
+          "marke": "Mango",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 130,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-13/LE80wX4BZr-b443-0.jpg",
+          "lank": "https://www.sellpy.se/item/LE80wX4BZr",
+          "ut": 1794260595026
+        },
+        {
+          "id": "FGD0mCyRPo",
+          "marke": "Under Armour",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 275,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-13/FGD0mCyRPo-b9ea-0.jpg",
+          "lank": "https://www.sellpy.se/item/FGD0mCyRPo",
+          "ut": 1794260593694
+        },
+        {
+          "id": "xPhC6WgzTa",
+          "marke": "H&M",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 70,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-7-k-9/xPhC6WgzTa-a435-0.jpg",
+          "lank": "https://www.sellpy.se/item/xPhC6WgzTa",
+          "ut": 1794260567367
+        },
+        {
+          "id": "RL6UAFIp2D",
+          "marke": "Polo Ralph Lauren",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 900,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-1/RL6UAFIp2D-13b8-0.jpg",
+          "lank": "https://www.sellpy.se/item/RL6UAFIp2D",
+          "ut": 1794260553174
+        },
+        {
+          "id": "aZw32uCVMi",
+          "marke": "Murrey",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-2/aZw32uCVMi-451b-0.jpg",
+          "lank": "https://www.sellpy.se/item/aZw32uCVMi",
+          "ut": 1794260534987
+        },
+        {
+          "id": "nSWBBEjLBu",
+          "marke": "Ted Baker",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 180,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-6-k-1/pY10mX8lMo-5689-0.jpg",
+          "lank": "https://www.sellpy.se/item/nSWBBEjLBu",
+          "ut": 1794258708800
+        },
+        {
+          "id": "1jrtXJsUp6",
+          "marke": "Selected Homme",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 120,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-l-5/1jrtXJsUp6-e072-0.jpg",
+          "lank": "https://www.sellpy.se/item/1jrtXJsUp6",
+          "ut": 1794256989578
+        },
+        {
+          "id": "pANP3SNghp",
+          "marke": "Premium by Jack & Jones",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-4/pANP3SNghp-4864-0.jpg",
+          "lank": "https://www.sellpy.se/item/pANP3SNghp",
+          "ut": 1794255078291
+        },
+        {
+          "id": "aY4JGFoUWb",
+          "marke": "Callaway",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 305,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-6/aY4JGFoUWb-2e3e-0.jpg",
+          "lank": "https://www.sellpy.se/item/aY4JGFoUWb",
+          "ut": 1794253477946
+        },
+        {
+          "id": "7xgWVGl0Wa",
+          "marke": "Polo Ralph Lauren",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 920,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-6-k-1/7xgWVGl0Wa-3ae5-0.jpg",
+          "lank": "https://www.sellpy.se/item/7xgWVGl0Wa",
+          "ut": 1794249413490
+        },
+        {
+          "id": "cJdUy8AJRQ",
+          "marke": "Hollister",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 130,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-13-l-6/cJdUy8AJRQ-9f43-0.jpg",
+          "lank": "https://www.sellpy.se/item/cJdUy8AJRQ",
+          "ut": 1794248302367
+        }
+      ]
+    },
+    {
+      "id": "henley",
+      "namn": "Henley-tröjor",
+      "antalTotalt": 68,
+      "sokord": "henley",
+      "filter": "(metadata.demography:\"Man\" OR metadata.demography:\"Unisex (Vuxen)\") AND (metadata.condition:\"Nytt\" OR metadata.condition:\"Mycket bra\") AND (sizes:\"MEN-INT-L\" OR sizes:\"PANTS-INCH-33\" OR sizes:\"SHOES-EU-45\") AND isForSale:true",
+      "reservSokordAnvant": false,
+      "nya": [],
+      "senaste": [
+        {
+          "id": "2jtpw9ok6v",
+          "marke": "H&M Basic",
+          "typ": "Långärmad t-shirt",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 90,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-l-2/2jtpw9ok6v-2753-0.jpg",
+          "lank": "https://www.sellpy.se/item/2jtpw9ok6v",
+          "ut": 1794117883319
+        },
+        {
+          "id": "ZClFiAFBLy",
+          "marke": "H&M Basic",
+          "typ": "Långärmad t-shirt",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-3/ZClFiAFBLy-fba9-0.jpg",
+          "lank": "https://www.sellpy.se/item/ZClFiAFBLy",
+          "ut": 1793982525709
+        },
+        {
+          "id": "43bviBy0ya",
+          "marke": "H&M",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 170,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-9/43bviBy0ya-3387-0.jpg",
+          "lank": "https://www.sellpy.se/item/43bviBy0ya",
+          "ut": 1793518744087
+        },
+        {
+          "id": "RMuxHhZiou",
+          "marke": "H&M",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 65,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-l-1/RMuxHhZiou-287a-0.jpg",
+          "lank": "https://www.sellpy.se/item/RMuxHhZiou",
+          "ut": 1793981923839
+        },
+        {
+          "id": "sfrwLgwmHc",
+          "marke": "Carhartt",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 360,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-7-k-2/sfrwLgwmHc-2255-0.jpg",
+          "lank": "https://www.sellpy.se/item/sfrwLgwmHc",
+          "ut": 1793724959688
+        },
+        {
+          "id": "HpKdpe2nTE",
+          "marke": "Outdoor Life",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-5/HpKdpe2nTE-3350-0.jpg",
+          "lank": "https://www.sellpy.se/item/HpKdpe2nTE",
+          "ut": 1793728507516
+        },
+        {
+          "id": "FXsxZ02FhG",
+          "marke": "Carhartt",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 495,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-5/0HBlhIEPYO-e983-0.jpg",
+          "lank": "https://www.sellpy.se/item/FXsxZ02FhG",
+          "ut": 1794254079390
+        },
+        {
+          "id": "TNrIZcXoWu",
+          "marke": "Mustang True Denim",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 85,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-6-k-15/TNrIZcXoWu-4e2a-0.jpg",
+          "lank": "https://www.sellpy.se/item/TNrIZcXoWu",
+          "ut": 1793615803987
+        },
+        {
+          "id": "lUoHwx3DKH",
+          "marke": "Volcom",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 270,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-21-l-1/lUoHwx3DKH-745e-0.jpg",
+          "lank": "https://www.sellpy.se/item/lUoHwx3DKH",
+          "ut": 1794076964545
+        },
+        {
+          "id": "4KJhHpiLfR",
+          "marke": "Denim Day",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-7-k-1/4KJhHpiLfR-036b-0.jpg",
+          "lank": "https://www.sellpy.se/item/4KJhHpiLfR",
+          "ut": 1793947480403
+        },
+        {
+          "id": "j42Xz3hhCp",
+          "marke": "Merz B Schwanen",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Nytt",
+          "pris": 810,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-3/j42Xz3hhCp-b26a-0.jpg",
+          "lank": "https://www.sellpy.se/item/j42Xz3hhCp",
+          "ut": 1793889645222
+        },
+        {
+          "id": "P6jzKDdK37",
+          "marke": "Autark",
+          "typ": "Tröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 85,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-1/bFFkHPcpi1-8e4a-0.jpg",
+          "lank": "https://www.sellpy.se/item/P6jzKDdK37",
+          "ut": 1793879831500
+        }
+      ]
+    },
+    {
+      "id": "rutigt",
+      "namn": "Rutigt",
+      "antalTotalt": 5815,
+      "sokord": "",
+      "filter": "(metadata.demography:\"Man\" OR metadata.demography:\"Unisex (Vuxen)\") AND (metadata.condition:\"Nytt\" OR metadata.condition:\"Mycket bra\") AND (sizes:\"MEN-INT-L\" OR sizes:\"PANTS-INCH-33\" OR sizes:\"SHOES-EU-45\") AND isForSale:true AND (metadata.pattern:\"Rutig\")",
+      "reservSokordAnvant": false,
+      "nya": [],
+      "senaste": [
+        {
+          "id": "gjMSE9H2zp",
+          "marke": "Taylors",
+          "typ": "Kortärmad skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-k-7/gjMSE9H2zp-9812-0.jpg",
+          "lank": "https://www.sellpy.se/item/gjMSE9H2zp",
+          "ut": 1794261859557
+        },
+        {
+          "id": "GF2HxCRiOO",
+          "marke": "Tommy Hilfiger",
+          "typ": "Buttondown-skjorta",
+          "storlek": "L",
+          "skick": "Nytt",
+          "pris": 400,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-1/GF2HxCRiOO-c56a-0.jpg",
+          "lank": "https://www.sellpy.se/item/GF2HxCRiOO",
+          "ut": 1794260586134
+        },
+        {
+          "id": "jgc6dXr6QA",
+          "marke": "Puma",
+          "typ": "T-shirt",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 95,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-2/jgc6dXr6QA-b55e-0.jpg",
+          "lank": "https://www.sellpy.se/item/jgc6dXr6QA",
+          "ut": 1794260535551
+        },
+        {
+          "id": "ZyVpKW4GQh",
+          "marke": "O'Neill",
+          "typ": "Badshorts",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 95,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-hanging-18-l-4/iOpHEOaC4N-1225-0.jpg",
+          "lank": "https://www.sellpy.se/item/ZyVpKW4GQh",
+          "ut": 1794259906085
+        },
+        {
+          "id": "nEzYjVkccP",
+          "marke": "Scotch & Soda",
+          "typ": "Buttondown-skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 55,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-l-1/PlFkOuH5M4-26af-0.jpg",
+          "lank": "https://www.sellpy.se/item/nEzYjVkccP",
+          "ut": 1794258735604
+        },
+        {
+          "id": "CmDslnPdos",
+          "marke": "Cottonfield",
+          "typ": "Flanellskjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 170,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-9-k-2/f5ldyvCDXU-70d8-0.jpg",
+          "lank": "https://www.sellpy.se/item/CmDslnPdos",
+          "ut": 1794258734593
+        },
+        {
+          "id": "bbsFNfTsgg",
+          "marke": "Cottonfield",
+          "typ": "Skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 65,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-12/7YPjVbqgQz-480d-0.jpg",
+          "lank": "https://www.sellpy.se/item/bbsFNfTsgg",
+          "ut": 1794258697842
+        },
+        {
+          "id": "d2fSjjD01x",
+          "marke": "H&M",
+          "typ": "Överskjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 70,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-k-10/Ifx1XJpHz2-d099-0.jpg",
+          "lank": "https://www.sellpy.se/item/d2fSjjD01x",
+          "ut": 1794258186076
+        },
+        {
+          "id": "HBOsfQUBWq",
+          "marke": "L.O.G.G by H&M",
+          "typ": "Flanellskjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 120,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-2/HBOsfQUBWq-447c-0.jpg",
+          "lank": "https://www.sellpy.se/item/HBOsfQUBWq",
+          "ut": 1794257092327
+        },
+        {
+          "id": "4s1fK3dYda",
+          "marke": "Diesel",
+          "typ": "Kortärmad skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 330,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-7-k-3/4s1fK3dYda-96ba-0.jpg",
+          "lank": "https://www.sellpy.se/item/4s1fK3dYda",
+          "ut": 1794257069142
+        },
+        {
+          "id": "aEFI60kRtT",
+          "marke": "Redwood",
+          "typ": "Flanellskjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 110,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-9/aEFI60kRtT-2896-0.jpg",
+          "lank": "https://www.sellpy.se/item/aEFI60kRtT",
+          "ut": 1794256300540
+        },
+        {
+          "id": "4B7TFbZndr",
+          "marke": "Bondelid",
+          "typ": "Skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 75,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-5-k-8/4B7TFbZndr-1e4c-0.jpg",
+          "lank": "https://www.sellpy.se/item/4B7TFbZndr",
+          "ut": 1794254273651
+        }
+      ]
+    },
+    {
+      "id": "skinn",
+      "namn": "Skinn",
+      "antalTotalt": 844,
+      "sokord": "",
+      "filter": "(metadata.demography:\"Man\" OR metadata.demography:\"Unisex (Vuxen)\") AND (metadata.condition:\"Nytt\" OR metadata.condition:\"Mycket bra\") AND (sizes:\"MEN-INT-L\" OR sizes:\"PANTS-INCH-33\" OR sizes:\"SHOES-EU-45\") AND isForSale:true AND (metadata.material:\"Skinn\")",
+      "reservSokordAnvant": false,
+      "nya": [],
+      "senaste": [
+        {
+          "id": "VBMUBk4GzY",
+          "marke": "G-Star Raw",
+          "typ": "Jeans",
+          "storlek": "W33",
+          "skick": "Mycket bra",
+          "pris": 460,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-hanging-15-k-3/VBMUBk4GzY-a41e-0.jpg",
+          "lank": "https://www.sellpy.se/item/VBMUBk4GzY",
+          "ut": 1794257617505
+        },
+        {
+          "id": "kUCoaOll42",
+          "marke": "Boxfresh",
+          "typ": "Kängor",
+          "storlek": "EU 45",
+          "skick": "Mycket bra",
+          "pris": 690,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-case-21-l-4/kUCoaOll42-b81f-0.jpg",
+          "lank": "https://www.sellpy.se/item/kUCoaOll42",
+          "ut": 1794256503101
+        },
+        {
+          "id": "bQ3s9Cn4QP",
+          "marke": "New Balance",
+          "typ": "Träningsskor",
+          "storlek": "EU 45",
+          "skick": "Mycket bra",
+          "pris": 1600,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-case-14-k-10/bQ3s9Cn4QP-cbb0-0.jpg",
+          "lank": "https://www.sellpy.se/item/bQ3s9Cn4QP",
+          "ut": 1794253186789
+        },
+        {
+          "id": "W4leImovfE",
+          "marke": "Jack & Jones Vintage",
+          "typ": "Läderjacka",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 1160,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-l-5/W4leImovfE-3e29-0.jpg",
+          "lank": "https://www.sellpy.se/item/W4leImovfE",
+          "ut": 1794246265562
+        },
+        {
+          "id": "oMArWPQcjl",
+          "marke": "Bruno Banani",
+          "typ": "Läderjacka",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 1160,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-5-k-5/oMArWPQcjl-9e60-0.jpg",
+          "lank": "https://www.sellpy.se/item/oMArWPQcjl",
+          "ut": 1794246172455
+        },
+        {
+          "id": "52hp80UM8X",
+          "marke": "G-Star Raw",
+          "typ": "Jeans",
+          "storlek": "W33",
+          "skick": "Mycket bra",
+          "pris": 300,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-hanging-10-k-7/52hp80UM8X-3ea8-0.jpg",
+          "lank": "https://www.sellpy.se/item/52hp80UM8X",
+          "ut": 1794242022258
+        },
+        {
+          "id": "bDULngpYVR",
+          "marke": "Dr. Martens",
+          "typ": "Kängor",
+          "storlek": "EU 45",
+          "skick": "Nytt",
+          "pris": 1700,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-case-14-k-5/bDULngpYVR-ccf3-0.jpg",
+          "lank": "https://www.sellpy.se/item/bDULngpYVR",
+          "ut": 1794228264212
+        },
+        {
+          "id": "IBCPtC6DkA",
+          "marke": "Roa",
+          "typ": "Vandringsskor",
+          "storlek": "EU 45",
+          "skick": "Mycket bra",
+          "pris": 930,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-case-14-k-12/2j3e12MvL8-58be-0.jpg",
+          "lank": "https://www.sellpy.se/item/IBCPtC6DkA",
+          "ut": 1794228074826
+        },
+        {
+          "id": "Zu7IKBd1pE",
+          "marke": "Autenti",
+          "typ": "Sandaler",
+          "storlek": "EU 45",
+          "skick": "Mycket bra",
+          "pris": 450,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-case-14-k-16/Zu7IKBd1pE-f596-0.jpg",
+          "lank": "https://www.sellpy.se/item/Zu7IKBd1pE",
+          "ut": 1794223111381
+        },
+        {
+          "id": "qe5hc5V4LY",
+          "marke": "Polo Ralph Lauren",
+          "typ": "Collegetröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 1300,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-1/qe5hc5V4LY-4433-0.jpg",
+          "lank": "https://www.sellpy.se/item/qe5hc5V4LY",
+          "ut": 1794221070321
+        },
+        {
+          "id": "RPHj4zfrRa",
+          "marke": null,
+          "typ": "Läderjacka",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 1480,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-l-5/Lnhreubjcq-513b-0.jpg",
+          "lank": "https://www.sellpy.se/item/RPHj4zfrRa",
+          "ut": 1794219735260
+        },
+        {
+          "id": "o72qHnUA0L",
+          "marke": "G-Star Raw",
+          "typ": "Läderjacka",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 1500,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-k-13/o72qHnUA0L-c2ab-0.jpg",
+          "lank": "https://www.sellpy.se/item/o72qHnUA0L",
+          "ut": 1794213836235
+        }
+      ]
+    },
+    {
+      "id": "lila",
+      "namn": "Lila",
+      "antalTotalt": 1206,
+      "sokord": "",
+      "filter": "(metadata.demography:\"Man\" OR metadata.demography:\"Unisex (Vuxen)\") AND (metadata.condition:\"Nytt\" OR metadata.condition:\"Mycket bra\") AND (sizes:\"MEN-INT-L\" OR sizes:\"PANTS-INCH-33\" OR sizes:\"SHOES-EU-45\") AND isForSale:true AND (metadata.color:\"Lila\")",
+      "reservSokordAnvant": false,
+      "nya": [],
+      "senaste": [
+        {
+          "id": "w8heC90OIJ",
+          "marke": "ESPRIT",
+          "typ": "Farfarströja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 90,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-6/w8heC90OIJ-267f-0.jpg",
+          "lank": "https://www.sellpy.se/item/w8heC90OIJ",
+          "ut": 1794253476683
+        },
+        {
+          "id": "IZCUbgg6j2",
+          "marke": "Hugo Boss",
+          "typ": "Buttondown-skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 460,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-l-1/IZCUbgg6j2-b6f1-0.jpg",
+          "lank": "https://www.sellpy.se/item/IZCUbgg6j2",
+          "ut": 1794246213339
+        },
+        {
+          "id": "r0FDBVXOsH",
+          "marke": "Good Good Good",
+          "typ": "Kortärmad skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 130,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-16/r0FDBVXOsH-91d4-0.jpg",
+          "lank": "https://www.sellpy.se/item/r0FDBVXOsH",
+          "ut": 1794240155829
+        },
+        {
+          "id": "afDhGNqx8T",
+          "marke": null,
+          "typ": "Tröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 85,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-l-2/afDhGNqx8T-435a-0.jpg",
+          "lank": "https://www.sellpy.se/item/afDhGNqx8T",
+          "ut": 1794238483243
+        },
+        {
+          "id": "OLoiGmGWWv",
+          "marke": "Tommy Hilfiger",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 290,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-21-l-1/OLoiGmGWWv-12bd-0.jpg",
+          "lank": "https://www.sellpy.se/item/OLoiGmGWWv",
+          "ut": 1794237400584
+        },
+        {
+          "id": "uEcPNEadEY",
+          "marke": "Dressmann",
+          "typ": "Skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 150,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-4-k-4/uEcPNEadEY-5206-0.jpg",
+          "lank": "https://www.sellpy.se/item/uEcPNEadEY",
+          "ut": 1794236925794
+        },
+        {
+          "id": "lYcG32cVsB",
+          "marke": "Bruun & Stengade",
+          "typ": "Polotröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 180,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-6-k-12/lYcG32cVsB-1d80-0.jpg",
+          "lank": "https://www.sellpy.se/item/lYcG32cVsB",
+          "ut": 1794235934618
+        },
+        {
+          "id": "Ol2Smfe523",
+          "marke": "Jan Stuart",
+          "typ": "Skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 470,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-3-j-1/Ol2Smfe523-4792-0.jpg",
+          "lank": "https://www.sellpy.se/item/Ol2Smfe523",
+          "ut": 1794234018921
+        },
+        {
+          "id": "Hvi1DmiS9l",
+          "marke": "Adidas",
+          "typ": "Basketlinne",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 500,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-k-7/Hvi1DmiS9l-4da1-0.jpg",
+          "lank": "https://www.sellpy.se/item/Hvi1DmiS9l",
+          "ut": 1794228240628
+        },
+        {
+          "id": "dcKNuJy0S8",
+          "marke": "Core by Jack & Jones",
+          "typ": "Kortärmad skjorta",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 95,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-2-l-4/dcKNuJy0S8-c1e5-0.jpg",
+          "lank": "https://www.sellpy.se/item/dcKNuJy0S8",
+          "ut": 1794228214460
+        },
+        {
+          "id": "KypPJZKeON",
+          "marke": "Puma",
+          "typ": "Träningsjacka",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 240,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-1-k-9/KypPJZKeON-8482-0.jpg",
+          "lank": "https://www.sellpy.se/item/KypPJZKeON",
+          "ut": 1794222465950
+        },
+        {
+          "id": "RCwTsdyDmY",
+          "marke": "Fred Perry",
+          "typ": "Pikétröja",
+          "storlek": "L",
+          "skick": "Mycket bra",
+          "pris": 690,
+          "tidigarePris": null,
+          "bild": "https://prod.images.sellpy.net/photoRobot-standard-8-k-12/RCwTsdyDmY-b4c1-0.jpg",
+          "lank": "https://www.sellpy.se/item/RCwTsdyDmY",
+          "ut": 1794210291248
+        }
+      ]
+    }
+  ],
+  "notis": {
+    "skickad": true,
+    "status": 200
+  }
+}
