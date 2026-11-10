@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-10T01:20:06.535Z",
+  "kord": "2026-11-10T14:52:20.906Z",
   "prisfallExempel": [
     {
       "id": "ZClFiAFBLy",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20339
+        20457
       ]
     ],
     "byxlangd": [
@@ -78,15 +78,15 @@
       ],
       [
         "30",
-        1879
+        1887
       ],
       [
         "31",
-        25
+        27
       ],
       [
         "32",
-        7160
+        7180
       ],
       [
         "33",
@@ -94,7 +94,7 @@
       ],
       [
         "34",
-        4423
+        4463
       ],
       [
         "35",
@@ -102,7 +102,7 @@
       ],
       [
         "36",
-        452
+        454
       ],
       [
         "38",
@@ -144,7 +144,7 @@
       ],
       [
         "66",
-        38
+        39
       ],
       [
         "67",
@@ -160,15 +160,15 @@
       ],
       [
         "70",
-        173
+        175
       ],
       [
         "71",
-        167
+        169
       ],
       [
         "72",
-        221
+        224
       ],
       [
         "73",
@@ -176,23 +176,23 @@
       ],
       [
         "74",
-        372
+        374
       ],
       [
         "75",
-        573
+        569
       ],
       [
         "76",
-        626
+        629
       ],
       [
         "77",
-        627
+        633
       ],
       [
         "78",
-        816
+        822
       ],
       [
         "79",
@@ -200,39 +200,39 @@
       ],
       [
         "80",
-        1396
+        1403
       ],
       [
         "81",
-        814
+        823
       ],
       [
         "82",
-        1000
+        1006
       ],
       [
         "83",
-        715
+        721
       ],
       [
         "84",
-        719
+        725
       ],
       [
         "85",
-        691
+        700
       ],
       [
         "86",
-        533
+        539
       ],
       [
         "87",
-        365
+        370
       ],
       [
         "88",
-        344
+        347
       ],
       [
         "89",
@@ -240,7 +240,7 @@
       ],
       [
         "90",
-        166
+        168
       ],
       [
         "91",
@@ -260,7 +260,7 @@
       ],
       [
         "95",
-        10
+        9
       ],
       [
         "96",
@@ -299,70 +299,44 @@
         }
       },
       {
-        "id": "pPU8oDSeVx",
+        "id": "B9DH4Dme6q",
         "metadata": {
           "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "id": "1606074776",
+              "type": "Färgförlust",
+              "location": "Hela varan",
+              "category": "Defekt"
+            }
+          ],
           "pantsLength": "32",
           "color": [
             "Blå"
           ],
           "fabric": "Denim",
           "material": [
-            "Bomull"
+            "Bomull",
+            "Elastan"
           ],
-          "brand": "Levi Strauss & Co",
+          "brand": "Levi's Premium",
           "model": "501",
           "demography": "Man",
           "pattern": "Enfärgat",
-          "pantsFit": "Straight",
           "type": "Jeans",
-          "condition": "Mycket bra",
+          "condition": "Acceptabelt",
           "measurement": {
-            "waistInCm": 86,
-            "innerLegLengthInCm": 82
+            "waistInCm": 96,
+            "innerLegLengthInCm": 77
           }
         }
       },
       {
-        "id": "QSWOF2skJy",
+        "id": "7wU5W6u0Su",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "3205789011",
-              "type": "Färgförlust",
-              "location": "Ben",
-              "category": "Defekt"
-            }
-          ],
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Take Two",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 96,
-            "innerLegLengthInCm": 80
-          },
-          "details": [
-            "Knappar",
-            "Fickor"
-          ]
-        }
-      },
-      {
-        "id": "ULxZo8ATG0",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
+          "pantsLength": "30",
+          "cut": "Bootcut",
           "color": [
             "Blå"
           ],
@@ -371,16 +345,17 @@
             "Bomull"
           ],
           "brand": "Levi Strauss & Co",
-          "model": "550",
+          "model": "527",
           "demography": "Man",
           "pattern": "Enfärgat",
           "countryOfOrigin": "ID",
+          "pantsFit": "Slim",
           "type": "Jeans",
           "condition": "Mycket bra",
-          "productCode": "S40154",
+          "productCode": "S40175",
           "measurement": {
-            "waistInCm": 80,
-            "innerLegLengthInCm": 81
+            "waistInCm": 84,
+            "innerLegLengthInCm": 78
           },
           "details": [
             "Knappar",
@@ -409,6 +384,34 @@
           "measurement": {
             "waistInCm": 78,
             "innerLegLengthInCm": 86
+          }
+        }
+      },
+      {
+        "id": "SzVpcnyU6a",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "season": [
+            "Vår",
+            "Sommar"
+          ],
+          "color": [
+            "Svart",
+            "Blå",
+            "Flerfärgad"
+          ],
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Carhartt",
+          "model": "Carrier Bermuda",
+          "demography": "Man",
+          "pattern": "Rutig",
+          "type": "Cargoshorts",
+          "condition": "Bra",
+          "productCode": "10PO05215.1210",
+          "measurement": {
+            "waistInCm": 94
           }
         }
       }
