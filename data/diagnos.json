@@ -1,18 +1,32 @@
 {
-  "kord": "2026-11-13T14:34:19.087Z",
+  "kord": "2026-11-14T13:30:19.592Z",
   "prisfallExempel": [
     {
-      "id": "WDbo0c5XeR",
+      "id": "std57KATNi",
       "pricing": {
-        "amount": 930,
+        "amount": 60,
         "currency": "SEK"
       },
       "priceDrop_SE": {
-        "showUntil": 1794643134795,
         "oldPrice": {
-          "amount": 159000,
+          "amount": 10000,
           "currency": "SEK"
-        }
+        },
+        "showUntil": 1794732232948
+      }
+    },
+    {
+      "id": "vTEIu6qmXP",
+      "pricing": {
+        "amount": 70,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "oldPrice": {
+          "amount": 13000,
+          "currency": "SEK"
+        },
+        "showUntil": 1794732277034
       }
     }
   ],
@@ -20,7 +34,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20555
+        20501
       ]
     ],
     "byxlangd": [
@@ -50,7 +64,7 @@
       ],
       [
         "30",
-        1897
+        1894
       ],
       [
         "31",
@@ -58,7 +72,7 @@
       ],
       [
         "32",
-        7215
+        7197
       ],
       [
         "33",
@@ -66,7 +80,7 @@
       ],
       [
         "34",
-        4477
+        4455
       ],
       [
         "35",
@@ -108,7 +122,7 @@
       ],
       [
         "64",
-        20
+        21
       ],
       [
         "65",
@@ -116,7 +130,7 @@
       ],
       [
         "66",
-        37
+        35
       ],
       [
         "67",
@@ -124,83 +138,83 @@
       ],
       [
         "68",
-        85
+        86
       ],
       [
         "69",
-        56
+        55
       ],
       [
         "70",
-        175
+        172
       ],
       [
         "71",
-        164
+        160
       ],
       [
         "72",
-        230
+        229
       ],
       [
         "73",
-        271
+        275
       ],
       [
         "74",
-        386
+        387
       ],
       [
         "75",
-        570
+        567
       ],
       [
         "76",
-        610
+        608
       ],
       [
         "77",
-        631
+        628
       ],
       [
         "78",
-        825
+        824
       ],
       [
         "79",
-        631
+        625
       ],
       [
         "80",
-        1402
+        1398
       ],
       [
         "81",
-        820
+        817
       ],
       [
         "82",
-        996
+        993
       ],
       [
         "83",
-        727
-      ],
-      [
-        "84",
         726
       ],
       [
+        "84",
+        728
+      ],
+      [
         "85",
-        693
+        686
       ],
       [
         "86",
-        548
+        547
       ],
       [
         "87",
-        384
+        387
       ],
       [
         "88",
@@ -208,11 +222,11 @@
       ],
       [
         "89",
-        169
+        166
       ],
       [
         "90",
-        173
+        174
       ],
       [
         "91",
@@ -220,7 +234,7 @@
       ],
       [
         "92",
-        56
+        55
       ],
       [
         "93",
@@ -232,7 +246,7 @@
       ],
       [
         "95",
-        9
+        10
       ],
       [
         "96",
@@ -248,37 +262,6 @@
       ]
     ],
     "exempel": [
-      {
-        "id": "D7lz5H72rW",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "type": "Dålig lagning",
-              "location": "Gren",
-              "id": "4513253685",
-              "category": "Alteration"
-            }
-          ],
-          "pantsLength": "32",
-          "color": [
-            "Grå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "COS",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 82,
-            "innerLegLengthInCm": 76
-          }
-        }
-      },
       {
         "id": "B9DH4Dme6q",
         "metadata": {
@@ -313,7 +296,7 @@
         }
       },
       {
-        "id": "FOn2DGVVtM",
+        "id": "MwwgGJK5db",
         "metadata": {
           "size": "PANTS-INCH-33",
           "pantsLength": "34",
@@ -324,16 +307,16 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Acne Studios",
-          "model": "Mic Rigid",
+          "brand": "Wrangler",
+          "model": "13Mwz",
           "demography": "Man",
           "pattern": "Enfärgat",
-          "countryOfOrigin": "AL",
+          "countryOfOrigin": "MX",
           "type": "Jeans",
-          "condition": "Mycket bra",
-          "productCode": "30A0033111433",
+          "condition": "Nytt",
+          "productCode": "112358499",
           "measurement": {
-            "waistInCm": 78,
+            "waistInCm": 84,
             "innerLegLengthInCm": 86
           },
           "details": [
@@ -342,49 +325,18 @@
         }
       },
       {
-        "id": "hTI588zkqf",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "season": [
-            "Höst",
-            "Vinter"
-          ],
-          "color": [
-            "Grå",
-            "Svart"
-          ],
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Balmain",
-          "demography": "Man",
-          "pattern": "Hundtand",
-          "countryOfOrigin": "JP",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "sizeEstimated": false,
-          "measurement": {
-            "waistInCm": 94,
-            "innerLegLengthInCm": 90
-          },
-          "details": [
-            "Fickor",
-            "Dragkedjestängning"
-          ]
-        }
-      },
-      {
-        "id": "XCW66REfW6",
+        "id": "QSWOF2skJy",
         "metadata": {
           "size": "PANTS-INCH-33",
           "defects": [
             {
-              "id": "2961957423",
-              "type": "Liten fläck",
-              "location": "Framsida",
-              "category": "Tecken på användning"
+              "id": "3205789011",
+              "type": "Färgförlust",
+              "location": "Ben",
+              "category": "Defekt"
             }
           ],
+          "pantsLength": "34",
           "color": [
             "Blå"
           ],
@@ -392,16 +344,71 @@
           "material": [
             "Bomull"
           ],
-          "brand": "LEVI'S Engineered Jeans",
-          "model": "Engineered Jeans",
+          "brand": "Take Two",
           "demography": "Man",
           "pattern": "Enfärgat",
           "type": "Jeans",
           "condition": "Bra",
           "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 83
+            "waistInCm": 96,
+            "innerLegLengthInCm": 80
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "WLRXdVmeXe",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Elastan",
+            "Ekologisk bomull"
+          ],
+          "brand": "Nudie Jeans",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Nytt",
+          "measurement": {
+            "waistInCm": 78,
+            "innerLegLengthInCm": 86
           }
+        }
+      },
+      {
+        "id": "oB5OfAac60",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Blå"
+          ],
+          "material": [
+            "Ekologisk bomull",
+            "Polyester"
+          ],
+          "brand": "Carhartt WIP",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "TN",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "90075",
+          "measurement": {
+            "waistInCm": 88,
+            "innerLegLengthInCm": 73
+          },
+          "details": [
+            "Fickor",
+            "Knappar"
+          ]
         }
       }
     ]
