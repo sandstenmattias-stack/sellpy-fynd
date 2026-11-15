@@ -1,32 +1,46 @@
 {
-  "kord": "2026-11-14T13:30:19.592Z",
+  "kord": "2026-11-15T13:55:39.054Z",
   "prisfallExempel": [
     {
-      "id": "std57KATNi",
+      "id": "43bviBy0ya",
+      "pricing": {
+        "amount": 160,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "showUntil": 1794469947783,
+        "oldPrice": {
+          "amount": 17000,
+          "currency": "SEK"
+        }
+      }
+    },
+    {
+      "id": "RMuxHhZiou",
       "pricing": {
         "amount": 60,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 10000,
+          "amount": 6500,
           "currency": "SEK"
         },
-        "showUntil": 1794732232948
+        "showUntil": 1794760676772
       }
     },
     {
-      "id": "vTEIu6qmXP",
+      "id": "sfrwLgwmHc",
       "pricing": {
-        "amount": 70,
+        "amount": 330,
         "currency": "SEK"
       },
       "priceDrop_SE": {
+        "showUntil": 1794417506722,
         "oldPrice": {
-          "amount": 13000,
+          "amount": 36000,
           "currency": "SEK"
-        },
-        "showUntil": 1794732277034
+        }
       }
     }
   ],
@@ -34,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20501
+        20272
       ]
     ],
     "byxlangd": [
@@ -64,7 +78,7 @@
       ],
       [
         "30",
-        1894
+        1870
       ],
       [
         "31",
@@ -72,7 +86,7 @@
       ],
       [
         "32",
-        7197
+        7127
       ],
       [
         "33",
@@ -80,7 +94,7 @@
       ],
       [
         "34",
-        4455
+        4378
       ],
       [
         "35",
@@ -88,7 +102,7 @@
       ],
       [
         "36",
-        459
+        447
       ],
       [
         "38",
@@ -138,15 +152,15 @@
       ],
       [
         "68",
-        86
+        85
       ],
       [
         "69",
-        55
+        53
       ],
       [
         "70",
-        172
+        169
       ],
       [
         "71",
@@ -154,79 +168,79 @@
       ],
       [
         "72",
-        229
+        228
       ],
       [
         "73",
-        275
+        270
       ],
       [
         "74",
-        387
+        382
       ],
       [
         "75",
-        567
+        562
       ],
       [
         "76",
-        608
+        602
       ],
       [
         "77",
-        628
+        617
       ],
       [
         "78",
-        824
+        814
       ],
       [
         "79",
-        625
+        619
       ],
       [
         "80",
-        1398
+        1374
       ],
       [
         "81",
-        817
+        808
       ],
       [
         "82",
-        993
+        974
       ],
       [
         "83",
-        726
+        713
       ],
       [
         "84",
-        728
+        715
       ],
       [
         "85",
-        686
+        675
       ],
       [
         "86",
-        547
+        542
       ],
       [
         "87",
-        387
+        382
       ],
       [
         "88",
-        349
+        338
       ],
       [
         "89",
-        166
+        162
       ],
       [
         "90",
-        174
+        169
       ],
       [
         "91",
@@ -234,7 +248,7 @@
       ],
       [
         "92",
-        55
+        54
       ],
       [
         "93",
@@ -296,6 +310,29 @@
         }
       },
       {
+        "id": "HPPCxEzwQV",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Grå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Ekologisk bomull"
+          ],
+          "brand": "Hope",
+          "model": "Rush Jeans",
+          "demography": "Man",
+          "type": "Jeans",
+          "condition": "Nytt",
+          "measurement": {
+            "waistInCm": 86,
+            "innerLegLengthInCm": 74
+          },
+          "pattern": "Enfärgat"
+        }
+      },
+      {
         "id": "MwwgGJK5db",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -322,6 +359,37 @@
           "details": [
             "Knappar"
           ]
+        }
+      },
+      {
+        "id": "XCW66REfW6",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "id": "2961957423",
+              "type": "Liten fläck",
+              "location": "Framsida",
+              "category": "Tecken på användning"
+            }
+          ],
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "LEVI'S Engineered Jeans",
+          "model": "Engineered Jeans",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Bra",
+          "measurement": {
+            "waistInCm": 88,
+            "innerLegLengthInCm": 83
+          }
         }
       },
       {
@@ -356,58 +424,6 @@
           "details": [
             "Knappar",
             "Fickor"
-          ]
-        }
-      },
-      {
-        "id": "WLRXdVmeXe",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Elastan",
-            "Ekologisk bomull"
-          ],
-          "brand": "Nudie Jeans",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Nytt",
-          "measurement": {
-            "waistInCm": 78,
-            "innerLegLengthInCm": 86
-          }
-        }
-      },
-      {
-        "id": "oB5OfAac60",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "color": [
-            "Blå"
-          ],
-          "material": [
-            "Ekologisk bomull",
-            "Polyester"
-          ],
-          "brand": "Carhartt WIP",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "TN",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "productCode": "90075",
-          "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 73
-          },
-          "details": [
-            "Fickor",
-            "Knappar"
           ]
         }
       }
