@@ -1,46 +1,18 @@
 {
-  "kord": "2026-11-15T13:55:39.054Z",
+  "kord": "2026-11-16T15:45:16.074Z",
   "prisfallExempel": [
     {
-      "id": "43bviBy0ya",
+      "id": "tG2IqBYGjE",
       "pricing": {
-        "amount": 160,
-        "currency": "SEK"
-      },
-      "priceDrop_SE": {
-        "showUntil": 1794469947783,
-        "oldPrice": {
-          "amount": 17000,
-          "currency": "SEK"
-        }
-      }
-    },
-    {
-      "id": "RMuxHhZiou",
-      "pricing": {
-        "amount": 60,
+        "amount": 350,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 6500,
+          "amount": 96000,
           "currency": "SEK"
         },
-        "showUntil": 1794760676772
-      }
-    },
-    {
-      "id": "sfrwLgwmHc",
-      "pricing": {
-        "amount": 330,
-        "currency": "SEK"
-      },
-      "priceDrop_SE": {
-        "showUntil": 1794417506722,
-        "oldPrice": {
-          "amount": 36000,
-          "currency": "SEK"
-        }
+        "showUntil": 1794900369567
       }
     }
   ],
@@ -48,7 +20,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20272
+        20261
       ]
     ],
     "byxlangd": [
@@ -78,7 +50,7 @@
       ],
       [
         "30",
-        1870
+        1864
       ],
       [
         "31",
@@ -86,7 +58,7 @@
       ],
       [
         "32",
-        7127
+        7151
       ],
       [
         "33",
@@ -94,7 +66,7 @@
       ],
       [
         "34",
-        4378
+        4353
       ],
       [
         "35",
@@ -102,7 +74,7 @@
       ],
       [
         "36",
-        447
+        443
       ],
       [
         "38",
@@ -132,7 +104,7 @@
       ],
       [
         "62",
-        9
+        8
       ],
       [
         "64",
@@ -140,11 +112,11 @@
       ],
       [
         "65",
-        34
+        35
       ],
       [
         "66",
-        35
+        36
       ],
       [
         "67",
@@ -156,11 +128,11 @@
       ],
       [
         "69",
-        53
+        52
       ],
       [
         "70",
-        169
+        168
       ],
       [
         "71",
@@ -168,19 +140,19 @@
       ],
       [
         "72",
-        228
+        227
       ],
       [
         "73",
-        270
+        269
       ],
       [
         "74",
-        382
+        380
       ],
       [
         "75",
-        562
+        564
       ],
       [
         "76",
@@ -188,19 +160,19 @@
       ],
       [
         "77",
-        617
+        624
       ],
       [
         "78",
-        814
+        820
       ],
       [
         "79",
-        619
+        617
       ],
       [
         "80",
-        1374
+        1368
       ],
       [
         "81",
@@ -208,19 +180,19 @@
       ],
       [
         "82",
-        974
+        977
       ],
       [
         "83",
-        713
+        712
       ],
       [
         "84",
-        715
+        714
       ],
       [
         "85",
-        675
+        667
       ],
       [
         "86",
@@ -228,23 +200,23 @@
       ],
       [
         "87",
-        382
+        376
       ],
       [
         "88",
-        338
+        335
       ],
       [
         "89",
-        162
+        163
       ],
       [
         "90",
-        169
+        165
       ],
       [
         "91",
-        65
+        66
       ],
       [
         "92",
@@ -256,7 +228,7 @@
       ],
       [
         "94",
-        17
+        16
       ],
       [
         "95",
@@ -307,6 +279,36 @@
             "waistInCm": 96,
             "innerLegLengthInCm": 77
           }
+        }
+      },
+      {
+        "id": "WlMP1tOyRa",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Blå",
+            "Rosa",
+            "Flerfärgad"
+          ],
+          "fabric": "Denim",
+          "brand": "Moschino Jeans",
+          "demography": "Man",
+          "pattern": "Övrigt",
+          "countryOfOrigin": "IT",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 84,
+            "innerLegLengthInCm": 70
+          },
+          "material": [
+            "Bomull"
+          ],
+          "details": [
+            "Knappar",
+            "Broderi",
+            "Fickor"
+          ]
         }
       },
       {
@@ -390,41 +392,6 @@
             "waistInCm": 88,
             "innerLegLengthInCm": 83
           }
-        }
-      },
-      {
-        "id": "QSWOF2skJy",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "3205789011",
-              "type": "Färgförlust",
-              "location": "Ben",
-              "category": "Defekt"
-            }
-          ],
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Take Two",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 96,
-            "innerLegLengthInCm": 80
-          },
-          "details": [
-            "Knappar",
-            "Fickor"
-          ]
         }
       }
     ]
