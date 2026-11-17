@@ -1,18 +1,18 @@
 {
-  "kord": "2026-11-16T15:45:16.074Z",
+  "kord": "2026-11-17T15:59:03.575Z",
   "prisfallExempel": [
     {
-      "id": "tG2IqBYGjE",
+      "id": "qYUcpR0GOT",
       "pricing": {
-        "amount": 350,
+        "amount": 50,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 96000,
+          "amount": 6500,
           "currency": "SEK"
         },
-        "showUntil": 1794900369567
+        "showUntil": 1795015867216
       }
     }
   ],
@@ -20,7 +20,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20261
+        20402
       ]
     ],
     "byxlangd": [
@@ -50,7 +50,7 @@
       ],
       [
         "30",
-        1864
+        1875
       ],
       [
         "31",
@@ -58,7 +58,7 @@
       ],
       [
         "32",
-        7151
+        7191
       ],
       [
         "33",
@@ -66,15 +66,15 @@
       ],
       [
         "34",
-        4353
+        4387
       ],
       [
         "35",
-        16
+        17
       ],
       [
         "36",
-        443
+        446
       ],
       [
         "38",
@@ -88,10 +88,6 @@
     "innerbenCm": [
       [
         "0",
-        3
-      ],
-      [
-        "42",
         3
       ],
       [
@@ -112,11 +108,11 @@
       ],
       [
         "65",
-        35
+        36
       ],
       [
         "66",
-        36
+        37
       ],
       [
         "67",
@@ -128,91 +124,91 @@
       ],
       [
         "69",
-        52
+        54
       ],
       [
         "70",
-        168
+        170
       ],
       [
         "71",
-        160
+        165
       ],
       [
         "72",
-        227
+        229
       ],
       [
         "73",
-        269
+        268
       ],
       [
         "74",
-        380
+        387
       ],
       [
         "75",
-        564
+        575
       ],
       [
         "76",
-        602
+        609
       ],
       [
         "77",
-        624
+        627
       ],
       [
         "78",
-        820
+        828
       ],
       [
         "79",
-        617
+        618
       ],
       [
         "80",
-        1368
+        1373
       ],
       [
         "81",
-        808
+        807
       ],
       [
         "82",
-        977
+        967
       ],
       [
         "83",
-        712
+        713
       ],
       [
         "84",
-        714
+        718
       ],
       [
         "85",
-        667
+        678
       ],
       [
         "86",
-        542
+        544
       ],
       [
         "87",
-        376
+        379
       ],
       [
         "88",
-        335
+        337
       ],
       [
         "89",
-        163
+        162
       ],
       [
         "90",
-        165
+        167
       ],
       [
         "91",
@@ -220,7 +216,7 @@
       ],
       [
         "92",
-        54
+        55
       ],
       [
         "93",
@@ -228,11 +224,11 @@
       ],
       [
         "94",
-        16
+        17
       ],
       [
         "95",
-        10
+        12
       ],
       [
         "96",
@@ -245,39 +241,33 @@
       [
         "77.5",
         4
+      ],
+      [
+        "80.5",
+        4
       ]
     ],
     "exempel": [
       {
-        "id": "B9DH4Dme6q",
+        "id": "S3yPwDmBRS",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "1606074776",
-              "type": "Färgförlust",
-              "location": "Hela varan",
-              "category": "Defekt"
-            }
-          ],
-          "pantsLength": "32",
+          "pantsLength": "34",
           "color": [
-            "Blå"
+            "Grön"
           ],
-          "fabric": "Denim",
+          "fabric": "Manchester",
           "material": [
             "Bomull",
             "Elastan"
           ],
-          "brand": "Levi's Premium",
-          "model": "501",
+          "brand": "Polo Ralph Lauren",
           "demography": "Man",
           "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Acceptabelt",
+          "type": "Manchesterbyxor",
+          "condition": "Bra",
           "measurement": {
-            "waistInCm": 96,
-            "innerLegLengthInCm": 77
+            "waistInCm": 86
           }
         }
       },
@@ -312,6 +302,34 @@
         }
       },
       {
+        "id": "ZETpvdliRr",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Svart"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "501",
+          "demography": "Man",
+          "pattern": "Övrigt",
+          "type": "Jeans",
+          "condition": "Nytt",
+          "measurement": {
+            "waistInCm": 86,
+            "innerLegLengthInCm": 87
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
         "id": "HPPCxEzwQV",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -335,10 +353,9 @@
         }
       },
       {
-        "id": "MwwgGJK5db",
+        "id": "a6AqlOcvmw",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "34",
           "color": [
             "Blå"
           ],
@@ -346,51 +363,14 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Wrangler",
-          "model": "13Mwz",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "MX",
-          "type": "Jeans",
-          "condition": "Nytt",
-          "productCode": "112358499",
-          "measurement": {
-            "waistInCm": 84,
-            "innerLegLengthInCm": 86
-          },
-          "details": [
-            "Knappar"
-          ]
-        }
-      },
-      {
-        "id": "XCW66REfW6",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "2961957423",
-              "type": "Liten fläck",
-              "location": "Framsida",
-              "category": "Tecken på användning"
-            }
-          ],
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "LEVI'S Engineered Jeans",
-          "model": "Engineered Jeans",
+          "brand": "Dolce & Gabbana",
           "demography": "Man",
           "pattern": "Enfärgat",
           "type": "Jeans",
-          "condition": "Bra",
+          "condition": "Mycket bra",
           "measurement": {
             "waistInCm": 88,
-            "innerLegLengthInCm": 83
+            "innerLegLengthInCm": 90
           }
         }
       }
