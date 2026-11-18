@@ -1,10 +1,24 @@
 {
-  "kord": "2026-11-17T15:59:03.575Z",
+  "kord": "2026-11-18T15:39:09.786Z",
   "prisfallExempel": [
     {
-      "id": "qYUcpR0GOT",
+      "id": "43bviBy0ya",
       "pricing": {
-        "amount": 50,
+        "amount": 160,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "showUntil": 1794469947783,
+        "oldPrice": {
+          "amount": 17000,
+          "currency": "SEK"
+        }
+      }
+    },
+    {
+      "id": "RMuxHhZiou",
+      "pricing": {
+        "amount": 60,
         "currency": "SEK"
       },
       "priceDrop_SE": {
@@ -12,7 +26,21 @@
           "amount": 6500,
           "currency": "SEK"
         },
-        "showUntil": 1795015867216
+        "showUntil": 1794760676772
+      }
+    },
+    {
+      "id": "sfrwLgwmHc",
+      "pricing": {
+        "amount": 315,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "oldPrice": {
+          "amount": 33000,
+          "currency": "SEK"
+        },
+        "showUntil": 1794937194429
       }
     }
   ],
@@ -20,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20402
+        20573
       ]
     ],
     "byxlangd": [
@@ -50,7 +78,7 @@
       ],
       [
         "30",
-        1875
+        1886
       ],
       [
         "31",
@@ -58,15 +86,15 @@
       ],
       [
         "32",
-        7191
+        7270
       ],
       [
         "33",
-        76
+        77
       ],
       [
         "34",
-        4387
+        4431
       ],
       [
         "35",
@@ -74,7 +102,7 @@
       ],
       [
         "36",
-        446
+        448
       ],
       [
         "38",
@@ -86,10 +114,6 @@
       ]
     ],
     "innerbenCm": [
-      [
-        "0",
-        3
-      ],
       [
         "43",
         4
@@ -108,23 +132,23 @@
       ],
       [
         "65",
-        36
-      ],
-      [
-        "66",
         37
       ],
       [
+        "66",
+        39
+      ],
+      [
         "67",
-        30
+        29
       ],
       [
         "68",
-        85
+        86
       ],
       [
         "69",
-        54
+        55
       ],
       [
         "70",
@@ -132,79 +156,79 @@
       ],
       [
         "71",
-        165
+        167
       ],
       [
         "72",
-        229
+        228
       ],
       [
         "73",
-        268
+        267
       ],
       [
         "74",
-        387
+        386
       ],
       [
         "75",
-        575
+        572
       ],
       [
         "76",
-        609
+        605
       ],
       [
         "77",
-        627
+        634
       ],
       [
         "78",
-        828
+        847
       ],
       [
         "79",
-        618
+        632
       ],
       [
         "80",
-        1373
+        1377
       ],
       [
         "81",
-        807
+        808
       ],
       [
         "82",
-        967
+        971
       ],
       [
         "83",
-        713
+        716
       ],
       [
         "84",
-        718
+        728
       ],
       [
         "85",
-        678
+        684
       ],
       [
         "86",
-        544
+        546
       ],
       [
         "87",
-        379
+        386
       ],
       [
         "88",
-        337
+        342
       ],
       [
         "89",
-        162
+        158
       ],
       [
         "90",
@@ -212,19 +236,19 @@
       ],
       [
         "91",
-        66
+        68
       ],
       [
         "92",
-        55
+        56
       ],
       [
         "93",
-        24
+        25
       ],
       [
         "94",
-        17
+        18
       ],
       [
         "95",
@@ -232,7 +256,7 @@
       ],
       [
         "96",
-        10
+        11
       ],
       [
         "82.5",
@@ -240,6 +264,10 @@
       ],
       [
         "77.5",
+        4
+      ],
+      [
+        "79.5",
         4
       ],
       [
@@ -272,84 +300,38 @@
         }
       },
       {
-        "id": "WlMP1tOyRa",
+        "id": "ihs72CBCDY",
         "metadata": {
           "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "type": "Lite smutsig",
+              "location": "Sida",
+              "id": "5283088118",
+              "category": "Tecken på användning"
+            }
+          ],
           "color": [
-            "Blå",
-            "Rosa",
-            "Flerfärgad"
+            "Blå"
           ],
           "fabric": "Denim",
-          "brand": "Moschino Jeans",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "True Religion",
           "demography": "Man",
-          "pattern": "Övrigt",
-          "countryOfOrigin": "IT",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "US",
           "type": "Jeans",
           "condition": "Mycket bra",
           "measurement": {
             "waistInCm": 84,
-            "innerLegLengthInCm": 70
-          },
-          "material": [
-            "Bomull"
-          ],
-          "details": [
-            "Knappar",
-            "Broderi",
-            "Fickor"
-          ]
-        }
-      },
-      {
-        "id": "ZETpvdliRr",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
-          "color": [
-            "Svart"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Levi Strauss & Co",
-          "model": "501",
-          "demography": "Man",
-          "pattern": "Övrigt",
-          "type": "Jeans",
-          "condition": "Nytt",
-          "measurement": {
-            "waistInCm": 86,
-            "innerLegLengthInCm": 87
+            "innerLegLengthInCm": 88
           },
           "details": [
             "Knappar",
             "Fickor"
           ]
-        }
-      },
-      {
-        "id": "HPPCxEzwQV",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "color": [
-            "Grå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Ekologisk bomull"
-          ],
-          "brand": "Hope",
-          "model": "Rush Jeans",
-          "demography": "Man",
-          "type": "Jeans",
-          "condition": "Nytt",
-          "measurement": {
-            "waistInCm": 86,
-            "innerLegLengthInCm": 74
-          },
-          "pattern": "Enfärgat"
         }
       },
       {
@@ -372,6 +354,67 @@
             "waistInCm": 88,
             "innerLegLengthInCm": 90
           }
+        }
+      },
+      {
+        "id": "7wU5W6u0Su",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "30",
+          "cut": "Bootcut",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "527",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "ID",
+          "pantsFit": "Slim",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "S40175",
+          "measurement": {
+            "waistInCm": 84,
+            "innerLegLengthInCm": 78
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "MwwgGJK5db",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Wrangler",
+          "model": "13Mwz",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "MX",
+          "type": "Jeans",
+          "condition": "Nytt",
+          "productCode": "112358499",
+          "measurement": {
+            "waistInCm": 84,
+            "innerLegLengthInCm": 86
+          },
+          "details": [
+            "Knappar"
+          ]
         }
       }
     ]
