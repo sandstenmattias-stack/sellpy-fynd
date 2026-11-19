@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-18T15:39:09.786Z",
+  "kord": "2026-11-19T15:44:08.397Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20573
+        20750
       ]
     ],
     "byxlangd": [
@@ -78,7 +78,7 @@
       ],
       [
         "30",
-        1886
+        1906
       ],
       [
         "31",
@@ -86,7 +86,7 @@
       ],
       [
         "32",
-        7270
+        7334
       ],
       [
         "33",
@@ -94,7 +94,7 @@
       ],
       [
         "34",
-        4431
+        4467
       ],
       [
         "35",
@@ -102,11 +102,11 @@
       ],
       [
         "36",
-        448
+        453
       ],
       [
         "38",
-        6
+        7
       ],
       [
         "40",
@@ -116,6 +116,10 @@
     "innerbenCm": [
       [
         "43",
+        4
+      ],
+      [
+        "45",
         4
       ],
       [
@@ -136,11 +140,11 @@
       ],
       [
         "66",
-        39
+        38
       ],
       [
         "67",
-        29
+        30
       ],
       [
         "68",
@@ -148,103 +152,103 @@
       ],
       [
         "69",
-        55
-      ],
-      [
-        "70",
-        170
-      ],
-      [
-        "71",
-        167
-      ],
-      [
-        "72",
-        228
-      ],
-      [
-        "73",
-        267
-      ],
-      [
-        "74",
-        386
-      ],
-      [
-        "75",
-        572
-      ],
-      [
-        "76",
-        605
-      ],
-      [
-        "77",
-        634
-      ],
-      [
-        "78",
-        847
-      ],
-      [
-        "79",
-        632
-      ],
-      [
-        "80",
-        1377
-      ],
-      [
-        "81",
-        808
-      ],
-      [
-        "82",
-        971
-      ],
-      [
-        "83",
-        716
-      ],
-      [
-        "84",
-        728
-      ],
-      [
-        "85",
-        684
-      ],
-      [
-        "86",
-        546
-      ],
-      [
-        "87",
-        386
-      ],
-      [
-        "88",
-        342
-      ],
-      [
-        "89",
-        158
-      ],
-      [
-        "90",
-        167
-      ],
-      [
-        "91",
-        68
-      ],
-      [
-        "92",
         56
       ],
       [
+        "70",
+        168
+      ],
+      [
+        "71",
+        164
+      ],
+      [
+        "72",
+        229
+      ],
+      [
+        "73",
+        275
+      ],
+      [
+        "74",
+        388
+      ],
+      [
+        "75",
+        582
+      ],
+      [
+        "76",
+        610
+      ],
+      [
+        "77",
+        637
+      ],
+      [
+        "78",
+        853
+      ],
+      [
+        "79",
+        630
+      ],
+      [
+        "80",
+        1386
+      ],
+      [
+        "81",
+        818
+      ],
+      [
+        "82",
+        990
+      ],
+      [
+        "83",
+        713
+      ],
+      [
+        "84",
+        731
+      ],
+      [
+        "85",
+        694
+      ],
+      [
+        "86",
+        550
+      ],
+      [
+        "87",
+        382
+      ],
+      [
+        "88",
+        347
+      ],
+      [
+        "89",
+        161
+      ],
+      [
+        "90",
+        169
+      ],
+      [
+        "91",
+        73
+      ],
+      [
+        "92",
+        58
+      ],
+      [
         "93",
-        25
+        24
       ],
       [
         "94",
@@ -252,7 +256,7 @@
       ],
       [
         "95",
-        12
+        13
       ],
       [
         "96",
@@ -263,39 +267,36 @@
         7
       ],
       [
+        "76.5",
+        4
+      ],
+      [
         "77.5",
-        4
-      ],
-      [
-        "79.5",
-        4
-      ],
-      [
-        "80.5",
         4
       ]
     ],
     "exempel": [
       {
-        "id": "S3yPwDmBRS",
+        "id": "4aQYUaoW13",
         "metadata": {
           "size": "PANTS-INCH-33",
           "pantsLength": "34",
           "color": [
-            "Grön"
+            "Blå"
           ],
-          "fabric": "Manchester",
+          "fabric": "Denim",
           "material": [
-            "Bomull",
-            "Elastan"
+            "Bomull"
           ],
-          "brand": "Polo Ralph Lauren",
+          "brand": "Nudie Jeans",
+          "model": "Tuff Tony Wavy Blues",
           "demography": "Man",
           "pattern": "Enfärgat",
-          "type": "Manchesterbyxor",
-          "condition": "Bra",
+          "type": "Jeans",
+          "condition": "Mycket bra",
           "measurement": {
-            "waistInCm": 86
+            "waistInCm": 88,
+            "innerLegLengthInCm": 86
           }
         }
       },
@@ -335,6 +336,37 @@
         }
       },
       {
+        "id": "biG5qw0dCw",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "id": "1482651827",
+              "type": "Liten del saknas",
+              "location": "Baksida",
+              "category": "Tecken på användning"
+            }
+          ],
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Rock Revival",
+          "demography": "Man",
+          "pattern": "Övrigt",
+          "countryOfOrigin": "US",
+          "type": "Jeans",
+          "condition": "Bra",
+          "measurement": {
+            "waistInCm": 82,
+            "innerLegLengthInCm": 80
+          }
+        }
+      },
+      {
         "id": "a6AqlOcvmw",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -354,38 +386,6 @@
             "waistInCm": 88,
             "innerLegLengthInCm": 90
           }
-        }
-      },
-      {
-        "id": "7wU5W6u0Su",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "30",
-          "cut": "Bootcut",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Levi Strauss & Co",
-          "model": "527",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "ID",
-          "pantsFit": "Slim",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "productCode": "S40175",
-          "measurement": {
-            "waistInCm": 84,
-            "innerLegLengthInCm": 78
-          },
-          "details": [
-            "Knappar",
-            "Fickor"
-          ]
         }
       },
       {
