@@ -1,18 +1,18 @@
 {
-  "kord": "2026-11-19T15:44:08.397Z",
+  "kord": "2026-11-20T15:26:29.744Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
       "pricing": {
-        "amount": 160,
+        "amount": 130,
         "currency": "SEK"
       },
       "priceDrop_SE": {
-        "showUntil": 1794469947783,
         "oldPrice": {
-          "amount": 17000,
+          "amount": 16000,
           "currency": "SEK"
-        }
+        },
+        "showUntil": 1795250882770
       }
     },
     {
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20750
+        20912
       ]
     ],
     "byxlangd": [
@@ -78,7 +78,7 @@
       ],
       [
         "30",
-        1906
+        1918
       ],
       [
         "31",
@@ -86,23 +86,23 @@
       ],
       [
         "32",
-        7334
+        7411
       ],
       [
         "33",
-        77
+        76
       ],
       [
         "34",
-        4467
+        4512
       ],
       [
         "35",
-        17
+        16
       ],
       [
         "36",
-        453
+        459
       ],
       [
         "38",
@@ -140,127 +140,127 @@
       ],
       [
         "66",
-        38
+        37
       ],
       [
         "67",
-        30
+        31
       ],
       [
         "68",
-        86
+        85
       ],
       [
         "69",
-        56
+        55
       ],
       [
         "70",
-        168
+        170
       ],
       [
         "71",
-        164
+        163
       ],
       [
         "72",
-        229
+        231
       ],
       [
         "73",
-        275
+        284
       ],
       [
         "74",
-        388
+        391
       ],
       [
         "75",
-        582
+        589
       ],
       [
         "76",
-        610
+        622
       ],
       [
         "77",
-        637
+        650
       ],
       [
         "78",
-        853
+        857
       ],
       [
         "79",
-        630
+        638
       ],
       [
         "80",
-        1386
+        1402
       ],
       [
         "81",
-        818
+        817
       ],
       [
         "82",
-        990
+        1000
       ],
       [
         "83",
-        713
+        715
       ],
       [
         "84",
-        731
+        741
       ],
       [
         "85",
-        694
+        695
       ],
       [
         "86",
-        550
+        553
       ],
       [
         "87",
-        382
+        383
       ],
       [
         "88",
-        347
+        351
       ],
       [
         "89",
-        161
+        160
       ],
       [
         "90",
-        169
+        172
       ],
       [
         "91",
-        73
+        75
       ],
       [
         "92",
-        58
+        60
       ],
       [
         "93",
-        24
+        27
       ],
       [
         "94",
-        18
+        19
       ],
       [
         "95",
-        13
+        14
       ],
       [
         "96",
-        11
+        10
       ],
       [
         "82.5",
@@ -336,37 +336,6 @@
         }
       },
       {
-        "id": "biG5qw0dCw",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "1482651827",
-              "type": "Liten del saknas",
-              "location": "Baksida",
-              "category": "Tecken på användning"
-            }
-          ],
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Rock Revival",
-          "demography": "Man",
-          "pattern": "Övrigt",
-          "countryOfOrigin": "US",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 82,
-            "innerLegLengthInCm": 80
-          }
-        }
-      },
-      {
         "id": "a6AqlOcvmw",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -389,32 +358,51 @@
         }
       },
       {
-        "id": "MwwgGJK5db",
+        "id": "ZETpvdliRr",
         "metadata": {
           "size": "PANTS-INCH-33",
           "pantsLength": "34",
           "color": [
-            "Blå"
+            "Svart"
           ],
           "fabric": "Denim",
           "material": [
             "Bomull"
           ],
-          "brand": "Wrangler",
-          "model": "13Mwz",
+          "brand": "Levi Strauss & Co",
+          "model": "501",
           "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "MX",
+          "pattern": "Övrigt",
           "type": "Jeans",
           "condition": "Nytt",
-          "productCode": "112358499",
           "measurement": {
-            "waistInCm": 84,
-            "innerLegLengthInCm": 86
+            "waistInCm": 86,
+            "innerLegLengthInCm": 87
           },
           "details": [
-            "Knappar"
+            "Knappar",
+            "Fickor"
           ]
+        }
+      },
+      {
+        "id": "tkax6Bdaze",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "32",
+          "color": [
+            "Blå"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "517",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Bra",
+          "measurement": {
+            "waistInCm": 82,
+            "innerLegLengthInCm": 75
+          }
         }
       }
     ]
