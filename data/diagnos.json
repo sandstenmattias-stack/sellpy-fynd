@@ -1,18 +1,46 @@
 {
-  "kord": "2026-11-21T14:38:36.376Z",
+  "kord": "2026-11-22T14:34:11.237Z",
   "prisfallExempel": [
     {
-      "id": "D0GzMsrdOi",
+      "id": "43bviBy0ya",
       "pricing": {
-        "amount": 1170,
+        "amount": 130,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 128000,
+          "amount": 16000,
           "currency": "SEK"
         },
-        "showUntil": 1795347484557
+        "showUntil": 1795250882770
+      }
+    },
+    {
+      "id": "RMuxHhZiou",
+      "pricing": {
+        "amount": 60,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "oldPrice": {
+          "amount": 6500,
+          "currency": "SEK"
+        },
+        "showUntil": 1794760676772
+      }
+    },
+    {
+      "id": "sfrwLgwmHc",
+      "pricing": {
+        "amount": 315,
+        "currency": "SEK"
+      },
+      "priceDrop_SE": {
+        "oldPrice": {
+          "amount": 33000,
+          "currency": "SEK"
+        },
+        "showUntil": 1794937194429
       }
     }
   ],
@@ -20,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20901
+        20762
       ]
     ],
     "byxlangd": [
@@ -50,7 +78,7 @@
       ],
       [
         "30",
-        1911
+        1901
       ],
       [
         "31",
@@ -58,7 +86,7 @@
       ],
       [
         "32",
-        7429
+        7365
       ],
       [
         "33",
@@ -66,7 +94,7 @@
       ],
       [
         "34",
-        4500
+        4467
       ],
       [
         "35",
@@ -74,7 +102,7 @@
       ],
       [
         "36",
-        455
+        453
       ],
       [
         "38",
@@ -86,10 +114,6 @@
       ]
     ],
     "innerbenCm": [
-      [
-        "43",
-        4
-      ],
       [
         "45",
         4
@@ -128,7 +152,7 @@
       ],
       [
         "70",
-        169
+        168
       ],
       [
         "71",
@@ -136,59 +160,59 @@
       ],
       [
         "72",
-        230
+        227
       ],
       [
         "73",
-        282
+        281
       ],
       [
         "74",
-        390
+        388
       ],
       [
         "75",
-        589
+        581
       ],
       [
         "76",
-        624
+        621
       ],
       [
         "77",
-        653
+        648
       ],
       [
         "78",
-        850
+        844
       ],
       [
         "79",
-        636
+        633
       ],
       [
         "80",
-        1403
+        1394
       ],
       [
         "81",
-        822
+        814
       ],
       [
         "82",
-        996
+        989
       ],
       [
         "83",
-        711
+        704
       ],
       [
         "84",
-        738
+        734
       ],
       [
         "85",
-        697
+        688
       ],
       [
         "86",
@@ -196,15 +220,15 @@
       ],
       [
         "87",
-        383
+        380
       ],
       [
         "88",
-        349
+        347
       ],
       [
         "89",
-        160
+        156
       ],
       [
         "90",
@@ -212,11 +236,11 @@
       ],
       [
         "91",
-        75
+        74
       ],
       [
         "92",
-        60
+        58
       ],
       [
         "93",
@@ -245,31 +269,36 @@
       [
         "77.5",
         4
+      ],
+      [
+        "79.5",
+        4
       ]
     ],
     "exempel": [
       {
-        "id": "4aQYUaoW13",
+        "id": "WS6GL7QH6G",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "34",
+          "pantsLength": "32",
           "color": [
-            "Blå"
+            "Grön"
           ],
           "fabric": "Denim",
           "material": [
-            "Bomull"
+            "Elastan",
+            "Skinn",
+            "Ekologisk bomull",
+            "Polyester"
           ],
-          "brand": "Nudie Jeans",
-          "model": "Tuff Tony Wavy Blues",
+          "brand": "G-Star Raw",
           "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Mycket bra",
+          "type": "Cargobyxor",
+          "condition": "Bra",
           "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 86
-          }
+            "waistInCm": 94
+          },
+          "pattern": "Enfärgat"
         }
       },
       {
@@ -333,9 +362,10 @@
         }
       },
       {
-        "id": "a6AqlOcvmw",
+        "id": "4aQYUaoW13",
         "metadata": {
           "size": "PANTS-INCH-33",
+          "pantsLength": "34",
           "color": [
             "Blå"
           ],
@@ -343,34 +373,53 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Dolce & Gabbana",
+          "brand": "Nudie Jeans",
+          "model": "Tuff Tony Wavy Blues",
           "demography": "Man",
           "pattern": "Enfärgat",
           "type": "Jeans",
           "condition": "Mycket bra",
           "measurement": {
             "waistInCm": 88,
-            "innerLegLengthInCm": 90
+            "innerLegLengthInCm": 86
           }
         }
       },
       {
-        "id": "tkax6Bdaze",
+        "id": "PJKF3twKrA",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "32",
+          "defects": [
+            {
+              "id": "1217641190",
+              "type": "Lätt färgförlust",
+              "location": "Hela varan",
+              "category": "Tecken på användning"
+            }
+          ],
+          "pantsLength": "30",
+          "season": [
+            "Vår",
+            "Sommar"
+          ],
           "color": [
             "Blå"
           ],
-          "brand": "Levi Strauss & Co",
-          "model": "517",
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Acne Studios",
+          "model": "2021M Light Blue Vintage",
           "demography": "Man",
           "pattern": "Enfärgat",
+          "countryOfOrigin": "IT",
           "type": "Jeans",
-          "condition": "Bra",
+          "condition": "Acceptabelt",
+          "productCode": "B00277",
           "measurement": {
-            "waistInCm": 82,
-            "innerLegLengthInCm": 75
+            "waistInCm": 90,
+            "innerLegLengthInCm": 80
           }
         }
       }
