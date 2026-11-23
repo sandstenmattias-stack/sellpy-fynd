@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-22T14:34:11.237Z",
+  "kord": "2026-11-23T18:06:58.264Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -18,29 +18,29 @@
     {
       "id": "RMuxHhZiou",
       "pricing": {
-        "amount": 60,
+        "amount": 55,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 6500,
+          "amount": 6000,
           "currency": "SEK"
         },
-        "showUntil": 1794760676772
+        "showUntil": 1795540558297
       }
     },
     {
       "id": "sfrwLgwmHc",
       "pricing": {
-        "amount": 315,
+        "amount": 305,
         "currency": "SEK"
       },
       "priceDrop_SE": {
         "oldPrice": {
-          "amount": 33000,
+          "amount": 31500,
           "currency": "SEK"
         },
-        "showUntil": 1794937194429
+        "showUntil": 1795467855565
       }
     }
   ],
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20762
+        20836
       ]
     ],
     "byxlangd": [
@@ -78,31 +78,31 @@
       ],
       [
         "30",
-        1901
+        1902
       ],
       [
         "31",
-        28
+        29
       ],
       [
         "32",
-        7365
+        7393
       ],
       [
         "33",
-        76
+        77
       ],
       [
         "34",
-        4467
+        4481
       ],
       [
         "35",
-        16
+        15
       ],
       [
         "36",
-        453
+        452
       ],
       [
         "38",
@@ -127,8 +127,12 @@
         8
       ],
       [
+        "63",
+        4
+      ],
+      [
         "64",
-        21
+        22
       ],
       [
         "65",
@@ -140,23 +144,23 @@
       ],
       [
         "67",
-        30
+        31
       ],
       [
         "68",
-        84
+        83
       ],
       [
         "69",
-        57
+        58
       ],
       [
         "70",
-        168
+        167
       ],
       [
         "71",
-        163
+        161
       ],
       [
         "72",
@@ -164,11 +168,11 @@
       ],
       [
         "73",
-        281
+        283
       ],
       [
         "74",
-        388
+        386
       ],
       [
         "75",
@@ -180,31 +184,31 @@
       ],
       [
         "77",
-        648
+        652
       ],
       [
         "78",
-        844
+        849
       ],
       [
         "79",
-        633
+        628
       ],
       [
         "80",
-        1394
+        1396
       ],
       [
         "81",
-        814
+        810
       ],
       [
         "82",
-        989
+        995
       ],
       [
         "83",
-        704
+        701
       ],
       [
         "84",
@@ -212,11 +216,11 @@
       ],
       [
         "85",
-        688
+        684
       ],
       [
         "86",
-        552
+        557
       ],
       [
         "87",
@@ -224,7 +228,7 @@
       ],
       [
         "88",
-        347
+        350
       ],
       [
         "89",
@@ -232,7 +236,7 @@
       ],
       [
         "90",
-        170
+        172
       ],
       [
         "91",
@@ -252,7 +256,7 @@
       ],
       [
         "95",
-        14
+        13
       ],
       [
         "96",
@@ -269,36 +273,99 @@
       [
         "77.5",
         4
-      ],
-      [
-        "79.5",
-        4
       ]
     ],
     "exempel": [
       {
-        "id": "WS6GL7QH6G",
+        "id": "AVF6Rx7Na2",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "32",
+          "defects": [
+            {
+              "id": "2171515911",
+              "type": "Lite smutsig",
+              "location": "Nedre kant",
+              "category": "Tecken på användning"
+            },
+            {
+              "id": "4683013292",
+              "type": "Lagning",
+              "location": "Gren",
+              "category": "Alteration"
+            }
+          ],
+          "pantsLength": "34",
           "color": [
-            "Grön"
+            "Blå"
           ],
           "fabric": "Denim",
           "material": [
-            "Elastan",
-            "Skinn",
-            "Ekologisk bomull",
-            "Polyester"
+            "Bomull",
+            "Elastan"
           ],
-          "brand": "G-Star Raw",
+          "brand": "Nudie Jeans",
+          "model": "Average Joe",
           "demography": "Man",
-          "type": "Cargobyxor",
-          "condition": "Bra",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "NJ2722",
           "measurement": {
-            "waistInCm": 94
+            "waistInCm": 80,
+            "innerLegLengthInCm": 81
           },
-          "pattern": "Enfärgat"
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "4aQYUaoW13",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Nudie Jeans",
+          "model": "Tuff Tony Wavy Blues",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 88,
+            "innerLegLengthInCm": 86
+          }
+        }
+      },
+      {
+        "id": "5mXxG2q8e4",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull",
+            "Polyuretan"
+          ],
+          "brand": "Edwin",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "JP",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 92,
+            "innerLegLengthInCm": 91
+          }
         }
       },
       {
@@ -338,89 +405,35 @@
         }
       },
       {
-        "id": "5mXxG2q8e4",
+        "id": "T2LwuwoYdo",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull",
-            "Polyuretan"
-          ],
-          "brand": "Edwin",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "JP",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "measurement": {
-            "waistInCm": 92,
-            "innerLegLengthInCm": 91
-          }
-        }
-      },
-      {
-        "id": "4aQYUaoW13",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Nudie Jeans",
-          "model": "Tuff Tony Wavy Blues",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 86
-          }
-        }
-      },
-      {
-        "id": "PJKF3twKrA",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "1217641190",
-              "type": "Lätt färgförlust",
-              "location": "Hela varan",
-              "category": "Tecken på användning"
-            }
-          ],
-          "pantsLength": "30",
+          "pantsLength": "32",
           "season": [
-            "Vår",
-            "Sommar"
+            "Höst",
+            "Vinter"
           ],
           "color": [
-            "Blå"
+            "Brun"
           ],
-          "fabric": "Denim",
+          "fabric": "Manchester",
           "material": [
             "Bomull"
           ],
-          "brand": "Acne Studios",
-          "model": "2021M Light Blue Vintage",
+          "brand": "Polo Ralph Lauren",
           "demography": "Man",
           "pattern": "Enfärgat",
-          "countryOfOrigin": "IT",
-          "type": "Jeans",
-          "condition": "Acceptabelt",
-          "productCode": "B00277",
+          "countryOfOrigin": "LK",
+          "type": "Manchesterbyxor",
+          "condition": "Mycket bra",
           "measurement": {
-            "waistInCm": 90,
-            "innerLegLengthInCm": 80
-          }
+            "waistInCm": 88
+          },
+          "details": [
+            "Knappar",
+            "Fickor",
+            "Dragkedjestängning"
+          ]
         }
       }
     ]
