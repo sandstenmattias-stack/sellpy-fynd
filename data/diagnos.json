@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-23T18:06:58.264Z",
+  "kord": "2026-11-24T17:43:15.337Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,13 +48,13 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20836
+        20992
       ]
     ],
     "byxlangd": [
       [
         "24",
-        1
+        2
       ],
       [
         "25",
@@ -78,31 +78,31 @@
       ],
       [
         "30",
-        1902
+        1911
       ],
       [
         "31",
-        29
+        28
       ],
       [
         "32",
-        7393
+        7470
       ],
       [
         "33",
-        77
+        74
       ],
       [
         "34",
-        4481
+        4517
       ],
       [
         "35",
-        15
+        14
       ],
       [
         "36",
-        452
+        454
       ],
       [
         "38",
@@ -136,11 +136,11 @@
       ],
       [
         "65",
-        37
+        36
       ],
       [
         "66",
-        37
+        38
       ],
       [
         "67",
@@ -152,115 +152,115 @@
       ],
       [
         "69",
-        58
+        57
       ],
       [
         "70",
-        167
+        168
       ],
       [
         "71",
-        161
+        164
       ],
       [
         "72",
-        227
+        229
       ],
       [
         "73",
-        283
+        288
       ],
       [
         "74",
-        386
+        391
       ],
       [
         "75",
-        581
+        579
       ],
       [
         "76",
-        621
+        624
       ],
       [
         "77",
-        652
+        653
       ],
       [
         "78",
-        849
+        858
       ],
       [
         "79",
-        628
+        633
       ],
       [
         "80",
-        1396
+        1403
       ],
       [
         "81",
-        810
+        824
       ],
       [
         "82",
-        995
+        1003
       ],
       [
         "83",
-        701
+        700
       ],
       [
         "84",
-        734
+        741
       ],
       [
         "85",
-        684
+        695
       ],
       [
         "86",
-        557
+        559
       ],
       [
         "87",
-        380
+        385
       ],
       [
         "88",
-        350
+        345
       ],
       [
         "89",
-        156
+        160
       ],
       [
         "90",
-        172
+        175
       ],
       [
         "91",
-        74
+        71
       ],
       [
         "92",
-        58
+        57
       ],
       [
         "93",
-        26
+        27
       ],
       [
         "94",
-        18
+        19
       ],
       [
         "95",
-        13
+        14
       ],
       [
         "96",
-        10
+        11
       ],
       [
         "82.5",
@@ -321,30 +321,6 @@
         }
       },
       {
-        "id": "4aQYUaoW13",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Nudie Jeans",
-          "model": "Tuff Tony Wavy Blues",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 86
-          }
-        }
-      },
-      {
         "id": "5mXxG2q8e4",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -369,39 +345,39 @@
         }
       },
       {
-        "id": "MwL888OikI",
+        "id": "Qm7rcwdMKS",
         "metadata": {
           "size": "PANTS-INCH-33",
           "defects": [
             {
-              "id": "1244431405",
-              "type": "Liten trasig söm",
-              "location": "Sida",
+              "type": "Lite smutsig",
+              "location": "Hela varan",
+              "id": "4764457053",
               "category": "Tecken på användning"
-            },
-            {
-              "id": "4163733489",
-              "type": "Insydd",
-              "location": "Ben",
-              "category": "Alteration"
             }
           ],
-          "pantsLength": "32",
           "color": [
-            "Blå"
+            "Grå",
+            "Blå",
+            "Flerfärgad"
           ],
           "fabric": "Denim",
           "material": [
             "Bomull"
           ],
-          "brand": "Indigofera",
+          "brand": "Diesel",
           "demography": "Man",
+          "pattern": "Övrigt",
+          "countryOfOrigin": "IT",
           "type": "Jeans",
           "condition": "Bra",
           "measurement": {
             "waistInCm": 86,
-            "innerLegLengthInCm": 71
-          }
+            "innerLegLengthInCm": 87
+          },
+          "details": [
+            "Knappar"
+          ]
         }
       },
       {
@@ -434,6 +410,28 @@
             "Fickor",
             "Dragkedjestängning"
           ]
+        }
+      },
+      {
+        "id": "a6AqlOcvmw",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Dolce & Gabbana",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "measurement": {
+            "waistInCm": 88,
+            "innerLegLengthInCm": 90
+          }
         }
       }
     ]
