@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-24T17:43:15.337Z",
+  "kord": "2026-11-25T17:12:27.026Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        20992
+        21114
       ]
     ],
     "byxlangd": [
@@ -78,7 +78,7 @@
       ],
       [
         "30",
-        1911
+        1931
       ],
       [
         "31",
@@ -86,15 +86,15 @@
       ],
       [
         "32",
-        7470
+        7504
       ],
       [
         "33",
-        74
+        73
       ],
       [
         "34",
-        4517
+        4550
       ],
       [
         "35",
@@ -148,15 +148,15 @@
       ],
       [
         "68",
-        83
+        86
       ],
       [
         "69",
-        57
+        56
       ],
       [
         "70",
-        168
+        170
       ],
       [
         "71",
@@ -164,75 +164,75 @@
       ],
       [
         "72",
-        229
+        232
       ],
       [
         "73",
-        288
+        290
       ],
       [
         "74",
-        391
+        386
       ],
       [
         "75",
-        579
+        577
       ],
       [
         "76",
-        624
+        626
       ],
       [
         "77",
-        653
+        659
       ],
       [
         "78",
-        858
+        853
       ],
       [
         "79",
-        633
+        639
       ],
       [
         "80",
-        1403
+        1404
       ],
       [
         "81",
-        824
+        830
       ],
       [
         "82",
-        1003
+        1021
       ],
       [
         "83",
-        700
+        711
       ],
       [
         "84",
-        741
+        747
       ],
       [
         "85",
-        695
+        699
       ],
       [
         "86",
-        559
+        560
       ],
       [
         "87",
-        385
+        389
       ],
       [
         "88",
-        345
+        351
       ],
       [
         "89",
-        160
+        162
       ],
       [
         "90",
@@ -240,7 +240,7 @@
       ],
       [
         "91",
-        71
+        76
       ],
       [
         "92",
@@ -321,6 +321,46 @@
         }
       },
       {
+        "id": "S9WuXC0CCH",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "type": "Lätt slitet",
+              "location": "Knä/Knän",
+              "id": "1132020491",
+              "category": "Tecken på användning"
+            }
+          ],
+          "pantsLength": "32",
+          "season": [
+            "Höst",
+            "Vinter"
+          ],
+          "color": [
+            "Brun"
+          ],
+          "fabric": "Manchester",
+          "material": [
+            "Bomull",
+            "Elastan"
+          ],
+          "brand": "Levi Strauss & Co",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "ID",
+          "type": "Manchesterbyxor",
+          "condition": "Bra",
+          "productCode": "85627-0001",
+          "measurement": {
+            "waistInCm": 90
+          },
+          "details": [
+            "Fickor"
+          ]
+        }
+      },
+      {
         "id": "5mXxG2q8e4",
         "metadata": {
           "size": "PANTS-INCH-33",
@@ -345,77 +385,22 @@
         }
       },
       {
-        "id": "Qm7rcwdMKS",
+        "id": "PJKF3twKrA",
         "metadata": {
           "size": "PANTS-INCH-33",
           "defects": [
             {
-              "type": "Lite smutsig",
+              "id": "1217641190",
+              "type": "Lätt färgförlust",
               "location": "Hela varan",
-              "id": "4764457053",
               "category": "Tecken på användning"
             }
           ],
-          "color": [
-            "Grå",
-            "Blå",
-            "Flerfärgad"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Diesel",
-          "demography": "Man",
-          "pattern": "Övrigt",
-          "countryOfOrigin": "IT",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 86,
-            "innerLegLengthInCm": 87
-          },
-          "details": [
-            "Knappar"
-          ]
-        }
-      },
-      {
-        "id": "T2LwuwoYdo",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "32",
+          "pantsLength": "30",
           "season": [
-            "Höst",
-            "Vinter"
+            "Vår",
+            "Sommar"
           ],
-          "color": [
-            "Brun"
-          ],
-          "fabric": "Manchester",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Polo Ralph Lauren",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "LK",
-          "type": "Manchesterbyxor",
-          "condition": "Mycket bra",
-          "measurement": {
-            "waistInCm": 88
-          },
-          "details": [
-            "Knappar",
-            "Fickor",
-            "Dragkedjestängning"
-          ]
-        }
-      },
-      {
-        "id": "a6AqlOcvmw",
-        "metadata": {
-          "size": "PANTS-INCH-33",
           "color": [
             "Blå"
           ],
@@ -423,14 +408,53 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Dolce & Gabbana",
+          "brand": "Acne Studios",
+          "model": "2021M Light Blue Vintage",
           "demography": "Man",
           "pattern": "Enfärgat",
+          "countryOfOrigin": "IT",
           "type": "Jeans",
-          "condition": "Mycket bra",
+          "condition": "Acceptabelt",
+          "productCode": "B00277",
           "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 90
+            "waistInCm": 90,
+            "innerLegLengthInCm": 80
+          }
+        }
+      },
+      {
+        "id": "MwL888OikI",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "id": "1244431405",
+              "type": "Liten trasig söm",
+              "location": "Sida",
+              "category": "Tecken på användning"
+            },
+            {
+              "id": "4163733489",
+              "type": "Insydd",
+              "location": "Ben",
+              "category": "Alteration"
+            }
+          ],
+          "pantsLength": "32",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Indigofera",
+          "demography": "Man",
+          "type": "Jeans",
+          "condition": "Bra",
+          "measurement": {
+            "waistInCm": 86,
+            "innerLegLengthInCm": 71
           }
         }
       }
