@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-25T17:12:27.026Z",
+  "kord": "2026-11-26T16:53:09.500Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        21114
+        21176
       ]
     ],
     "byxlangd": [
@@ -70,7 +70,7 @@
       ],
       [
         "28",
-        17
+        18
       ],
       [
         "29",
@@ -78,7 +78,7 @@
       ],
       [
         "30",
-        1931
+        1933
       ],
       [
         "31",
@@ -86,7 +86,7 @@
       ],
       [
         "32",
-        7504
+        7511
       ],
       [
         "33",
@@ -94,7 +94,7 @@
       ],
       [
         "34",
-        4550
+        4591
       ],
       [
         "35",
@@ -102,7 +102,7 @@
       ],
       [
         "36",
-        454
+        458
       ],
       [
         "38",
@@ -116,7 +116,7 @@
     "innerbenCm": [
       [
         "45",
-        4
+        6
       ],
       [
         "61",
@@ -132,115 +132,115 @@
       ],
       [
         "64",
-        22
+        21
       ],
       [
         "65",
-        36
+        34
       ],
       [
         "66",
-        38
+        39
       ],
       [
         "67",
-        31
+        33
       ],
       [
         "68",
-        86
+        84
       ],
       [
         "69",
-        56
+        55
       ],
       [
         "70",
-        170
+        167
       ],
       [
         "71",
-        164
+        165
       ],
       [
         "72",
-        232
+        233
       ],
       [
         "73",
-        290
+        289
       ],
       [
         "74",
-        386
-      ],
-      [
-        "75",
-        577
-      ],
-      [
-        "76",
-        626
-      ],
-      [
-        "77",
-        659
-      ],
-      [
-        "78",
-        853
-      ],
-      [
-        "79",
-        639
-      ],
-      [
-        "80",
-        1404
-      ],
-      [
-        "81",
-        830
-      ],
-      [
-        "82",
-        1021
-      ],
-      [
-        "83",
-        711
-      ],
-      [
-        "84",
-        747
-      ],
-      [
-        "85",
-        699
-      ],
-      [
-        "86",
-        560
-      ],
-      [
-        "87",
         389
       ],
       [
+        "75",
+        573
+      ],
+      [
+        "76",
+        625
+      ],
+      [
+        "77",
+        666
+      ],
+      [
+        "78",
+        858
+      ],
+      [
+        "79",
+        638
+      ],
+      [
+        "80",
+        1409
+      ],
+      [
+        "81",
+        829
+      ],
+      [
+        "82",
+        1020
+      ],
+      [
+        "83",
+        714
+      ],
+      [
+        "84",
+        756
+      ],
+      [
+        "85",
+        700
+      ],
+      [
+        "86",
+        563
+      ],
+      [
+        "87",
+        392
+      ],
+      [
         "88",
-        351
+        354
       ],
       [
         "89",
-        162
+        168
       ],
       [
         "90",
-        175
+        170
       ],
       [
         "91",
-        76
+        71
       ],
       [
         "92",
@@ -276,6 +276,35 @@
       ]
     ],
     "exempel": [
+      {
+        "id": "a2KJCdyJPP",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "34",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "Levi Strauss & Co",
+          "model": "501",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "X12945PC",
+          "measurement": {
+            "waistInCm": 84,
+            "innerLegLengthInCm": 80
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
       {
         "id": "AVF6Rx7Na2",
         "metadata": {
@@ -321,43 +350,28 @@
         }
       },
       {
-        "id": "S9WuXC0CCH",
+        "id": "QIDH05vkh3",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "type": "Lätt slitet",
-              "location": "Knä/Knän",
-              "id": "1132020491",
-              "category": "Tecken på användning"
-            }
-          ],
-          "pantsLength": "32",
-          "season": [
-            "Höst",
-            "Vinter"
-          ],
+          "pantsLength": "34",
           "color": [
-            "Brun"
+            "Blå",
+            "Silverfärgad",
+            "Flerfärgad"
           ],
-          "fabric": "Manchester",
+          "fabric": "Denim",
           "material": [
-            "Bomull",
-            "Elastan"
+            "Bomull"
           ],
           "brand": "Levi Strauss & Co",
+          "model": "505",
           "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "ID",
-          "type": "Manchesterbyxor",
+          "type": "Jeans",
           "condition": "Bra",
-          "productCode": "85627-0001",
           "measurement": {
-            "waistInCm": 90
-          },
-          "details": [
-            "Fickor"
-          ]
+            "waistInCm": 84,
+            "innerLegLengthInCm": 72
+          }
         }
       },
       {
@@ -385,21 +399,12 @@
         }
       },
       {
-        "id": "PJKF3twKrA",
+        "id": "F2iluuiWEH",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "1217641190",
-              "type": "Lätt färgförlust",
-              "location": "Hela varan",
-              "category": "Tecken på användning"
-            }
-          ],
-          "pantsLength": "30",
-          "season": [
-            "Vår",
-            "Sommar"
+          "pantsLength": "36",
+          "details": [
+            "Fickor"
           ],
           "color": [
             "Blå"
@@ -408,53 +413,16 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Acne Studios",
-          "model": "2021M Light Blue Vintage",
+          "brand": "Wards",
+          "model": "Ring Denim",
           "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "IT",
+          "pattern": "Övrigt",
           "type": "Jeans",
-          "condition": "Acceptabelt",
-          "productCode": "B00277",
+          "condition": "Mycket bra",
+          "productCode": "40369",
           "measurement": {
-            "waistInCm": 90,
-            "innerLegLengthInCm": 80
-          }
-        }
-      },
-      {
-        "id": "MwL888OikI",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "defects": [
-            {
-              "id": "1244431405",
-              "type": "Liten trasig söm",
-              "location": "Sida",
-              "category": "Tecken på användning"
-            },
-            {
-              "id": "4163733489",
-              "type": "Insydd",
-              "location": "Ben",
-              "category": "Alteration"
-            }
-          ],
-          "pantsLength": "32",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Indigofera",
-          "demography": "Man",
-          "type": "Jeans",
-          "condition": "Bra",
-          "measurement": {
-            "waistInCm": 86,
-            "innerLegLengthInCm": 71
+            "waistInCm": 82,
+            "innerLegLengthInCm": 92
           }
         }
       }
