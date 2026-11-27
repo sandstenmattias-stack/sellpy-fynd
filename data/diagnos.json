@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-26T16:53:09.500Z",
+  "kord": "2026-11-27T16:38:52.416Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        21176
+        21280
       ]
     ],
     "byxlangd": [
@@ -70,7 +70,7 @@
       ],
       [
         "28",
-        18
+        19
       ],
       [
         "29",
@@ -78,15 +78,15 @@
       ],
       [
         "30",
-        1933
+        1930
       ],
       [
         "31",
-        28
+        29
       ],
       [
         "32",
-        7511
+        7531
       ],
       [
         "33",
@@ -94,7 +94,7 @@
       ],
       [
         "34",
-        4591
+        4625
       ],
       [
         "35",
@@ -102,7 +102,7 @@
       ],
       [
         "36",
-        458
+        471
       ],
       [
         "38",
@@ -120,7 +120,7 @@
       ],
       [
         "61",
-        10
+        9
       ],
       [
         "62",
@@ -132,11 +132,11 @@
       ],
       [
         "64",
-        21
+        23
       ],
       [
         "65",
-        34
+        35
       ],
       [
         "66",
@@ -144,11 +144,11 @@
       ],
       [
         "67",
-        33
+        34
       ],
       [
         "68",
-        84
+        85
       ],
       [
         "69",
@@ -156,59 +156,59 @@
       ],
       [
         "70",
-        167
+        170
       ],
       [
         "71",
-        165
+        168
       ],
       [
         "72",
-        233
+        231
       ],
       [
         "73",
-        289
+        294
       ],
       [
         "74",
-        389
+        391
       ],
       [
         "75",
-        573
+        571
       ],
       [
         "76",
-        625
+        628
       ],
       [
         "77",
-        666
+        674
       ],
       [
         "78",
-        858
+        861
       ],
       [
         "79",
-        638
+        643
       ],
       [
         "80",
-        1409
+        1417
       ],
       [
         "81",
-        829
+        831
       ],
       [
         "82",
-        1020
+        1036
       ],
       [
         "83",
-        714
+        722
       ],
       [
         "84",
@@ -216,27 +216,27 @@
       ],
       [
         "85",
-        700
+        707
       ],
       [
         "86",
-        563
+        566
       ],
       [
         "87",
-        392
+        395
       ],
       [
         "88",
-        354
+        352
       ],
       [
         "89",
-        168
+        171
       ],
       [
         "90",
-        170
+        171
       ],
       [
         "91",
@@ -244,7 +244,7 @@
       ],
       [
         "92",
-        57
+        58
       ],
       [
         "93",
@@ -260,7 +260,7 @@
       ],
       [
         "96",
-        11
+        12
       ],
       [
         "82.5",
@@ -350,27 +350,30 @@
         }
       },
       {
-        "id": "QIDH05vkh3",
+        "id": "F2iluuiWEH",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "34",
+          "pantsLength": "36",
+          "details": [
+            "Fickor"
+          ],
           "color": [
-            "Blå",
-            "Silverfärgad",
-            "Flerfärgad"
+            "Blå"
           ],
           "fabric": "Denim",
           "material": [
             "Bomull"
           ],
-          "brand": "Levi Strauss & Co",
-          "model": "505",
+          "brand": "Wards",
+          "model": "Ring Denim",
           "demography": "Man",
+          "pattern": "Övrigt",
           "type": "Jeans",
-          "condition": "Bra",
+          "condition": "Mycket bra",
+          "productCode": "40369",
           "measurement": {
-            "waistInCm": 84,
-            "innerLegLengthInCm": 72
+            "waistInCm": 82,
+            "innerLegLengthInCm": 92
           }
         }
       },
@@ -399,13 +402,9 @@
         }
       },
       {
-        "id": "F2iluuiWEH",
+        "id": "a6AqlOcvmw",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "pantsLength": "36",
-          "details": [
-            "Fickor"
-          ],
           "color": [
             "Blå"
           ],
@@ -413,16 +412,14 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Wards",
-          "model": "Ring Denim",
+          "brand": "Dolce & Gabbana",
           "demography": "Man",
-          "pattern": "Övrigt",
+          "pattern": "Enfärgat",
           "type": "Jeans",
           "condition": "Mycket bra",
-          "productCode": "40369",
           "measurement": {
-            "waistInCm": 82,
-            "innerLegLengthInCm": 92
+            "waistInCm": 88,
+            "innerLegLengthInCm": 90
           }
         }
       }
