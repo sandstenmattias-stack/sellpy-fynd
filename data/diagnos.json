@@ -1,5 +1,5 @@
 {
-  "kord": "2026-11-27T16:38:52.416Z",
+  "kord": "2026-11-28T15:30:04.245Z",
   "prisfallExempel": [
     {
       "id": "43bviBy0ya",
@@ -48,7 +48,7 @@
     "storlekstext": [
       [
         "PANTS-INCH-33",
-        21280
+        21184
       ]
     ],
     "byxlangd": [
@@ -62,7 +62,7 @@
       ],
       [
         "26",
-        3
+        4
       ],
       [
         "27",
@@ -70,7 +70,7 @@
       ],
       [
         "28",
-        19
+        20
       ],
       [
         "29",
@@ -78,7 +78,7 @@
       ],
       [
         "30",
-        1930
+        1913
       ],
       [
         "31",
@@ -86,7 +86,7 @@
       ],
       [
         "32",
-        7531
+        7473
       ],
       [
         "33",
@@ -94,7 +94,7 @@
       ],
       [
         "34",
-        4625
+        4630
       ],
       [
         "35",
@@ -102,7 +102,7 @@
       ],
       [
         "36",
-        471
+        462
       ],
       [
         "38",
@@ -148,11 +148,11 @@
       ],
       [
         "68",
-        85
+        84
       ],
       [
         "69",
-        55
+        54
       ],
       [
         "70",
@@ -164,47 +164,47 @@
       ],
       [
         "72",
-        231
+        228
       ],
       [
         "73",
-        294
+        292
       ],
       [
         "74",
-        391
+        383
       ],
       [
         "75",
-        571
+        566
       ],
       [
         "76",
-        628
+        624
       ],
       [
         "77",
-        674
+        672
       ],
       [
         "78",
-        861
+        855
       ],
       [
         "79",
-        643
+        638
       ],
       [
         "80",
-        1417
+        1409
       ],
       [
         "81",
-        831
+        828
       ],
       [
         "82",
-        1036
+        1029
       ],
       [
         "83",
@@ -212,31 +212,31 @@
       ],
       [
         "84",
-        756
+        752
       ],
       [
         "85",
-        707
+        709
       ],
       [
         "86",
-        566
+        569
       ],
       [
         "87",
-        395
+        393
       ],
       [
         "88",
-        352
+        349
       ],
       [
         "89",
-        171
+        168
       ],
       [
         "90",
-        171
+        170
       ],
       [
         "91",
@@ -276,35 +276,6 @@
       ]
     ],
     "exempel": [
-      {
-        "id": "a2KJCdyJPP",
-        "metadata": {
-          "size": "PANTS-INCH-33",
-          "pantsLength": "34",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull"
-          ],
-          "brand": "Levi Strauss & Co",
-          "model": "501",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "productCode": "X12945PC",
-          "measurement": {
-            "waistInCm": 84,
-            "innerLegLengthInCm": 80
-          },
-          "details": [
-            "Knappar",
-            "Fickor"
-          ]
-        }
-      },
       {
         "id": "AVF6Rx7Na2",
         "metadata": {
@@ -378,33 +349,11 @@
         }
       },
       {
-        "id": "5mXxG2q8e4",
+        "id": "7wU5W6u0Su",
         "metadata": {
           "size": "PANTS-INCH-33",
-          "color": [
-            "Blå"
-          ],
-          "fabric": "Denim",
-          "material": [
-            "Bomull",
-            "Polyuretan"
-          ],
-          "brand": "Edwin",
-          "demography": "Man",
-          "pattern": "Enfärgat",
-          "countryOfOrigin": "JP",
-          "type": "Jeans",
-          "condition": "Mycket bra",
-          "measurement": {
-            "waistInCm": 92,
-            "innerLegLengthInCm": 91
-          }
-        }
-      },
-      {
-        "id": "a6AqlOcvmw",
-        "metadata": {
-          "size": "PANTS-INCH-33",
+          "pantsLength": "30",
+          "cut": "Bootcut",
           "color": [
             "Blå"
           ],
@@ -412,15 +361,88 @@
           "material": [
             "Bomull"
           ],
-          "brand": "Dolce & Gabbana",
+          "brand": "Levi Strauss & Co",
+          "model": "527",
           "demography": "Man",
           "pattern": "Enfärgat",
+          "countryOfOrigin": "ID",
+          "pantsFit": "Slim",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "S40175",
+          "measurement": {
+            "waistInCm": 84,
+            "innerLegLengthInCm": 78
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "NdRnIEQBQd",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "pantsLength": "32",
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull",
+            "Elastan"
+          ],
+          "brand": "Replay",
+          "model": "983.000.619 450",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "TN",
+          "type": "Jeans",
+          "condition": "Mycket bra",
+          "productCode": "PF 1123412",
+          "measurement": {
+            "waistInCm": 86,
+            "innerLegLengthInCm": 84
+          },
+          "details": [
+            "Fickor"
+          ]
+        }
+      },
+      {
+        "id": "ihs72CBCDY",
+        "metadata": {
+          "size": "PANTS-INCH-33",
+          "defects": [
+            {
+              "type": "Lite smutsig",
+              "location": "Sida",
+              "id": "5283088118",
+              "category": "Tecken på användning"
+            }
+          ],
+          "color": [
+            "Blå"
+          ],
+          "fabric": "Denim",
+          "material": [
+            "Bomull"
+          ],
+          "brand": "True Religion",
+          "demography": "Man",
+          "pattern": "Enfärgat",
+          "countryOfOrigin": "US",
           "type": "Jeans",
           "condition": "Mycket bra",
           "measurement": {
-            "waistInCm": 88,
-            "innerLegLengthInCm": 90
-          }
+            "waistInCm": 84,
+            "innerLegLengthInCm": 88
+          },
+          "details": [
+            "Knappar",
+            "Fickor"
+          ]
         }
       }
     ]
